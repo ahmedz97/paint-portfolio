@@ -5,12 +5,15 @@
     "types": []
   },
   "files": [
-    "src/main.ts",
-    "src/main.server.ts"
+    "src/main.ts"
   ],
   "include": [
     "src/**/*.d.ts",
     "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/main.server.ts",
+    "src/server.ts"
   ]
 }
 
