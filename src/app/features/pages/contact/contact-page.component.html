@@ -1,0 +1,88 @@
+<div *ngIf="contactData$ | async as contactData">
+  <!-- Banner Section -->
+  <app-banner [bannerData]="contactData.banner"></app-banner>
+
+  <!-- Offices Section -->
+  <section class="py-5 my-5">
+    <div class="container">
+      <h5 class="h1 text-uppercase">
+        {{ contactData.offices.title }}
+        <span class="textMainColor">{{ contactData.offices.titleDot }}</span>
+      </h5>
+      <div class="row g-3 mt-4">
+        <div
+          class="col-xl-3 col-lg-4 col-md-6"
+          *ngFor="let office of contactData.offices.items"
+        >
+          <div class="contactContent p-4 rounded-3 shadow">
+            <h5 class="h3 text-uppercase">{{ office.name }}</h5>
+            <a [href]="'#'" class="text-secondary fs-5 d-block opacity-75">{{
+              office.address
+            }}</a>
+            <a
+              [href]="'mailto:' + office.email"
+              class="text-secondary fs-5 d-block opacity-75"
+              >{{ office.email }}</a
+            >
+            <a
+              [href]="getPhoneLink(office.phone)"
+              class="text-secondary fs-5 d-block opacity-75"
+              >{{ office.phone }}</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section *ngIf="contactData.map.iframe">
+    <iframe
+      [src]="contactData.map.iframe"
+      width="100%"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    >
+    </iframe>
+  </section>
+
+  <!-- Contact Form -->
+  <!-- <section class="my-5 py-5">
+    <div class="container">
+      <h5 class="h1 text-uppercase">
+        {{ contactData.form.title }}
+        <span class="textMainColor">{{ contactData.form.titleDot }}</span>
+      </h5>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="mt-4">
+        <div class="row g-3">
+          <div *ngFor="let field of contactData.form.fields" [class]="field.type === 'textarea' ? 'col-md-12' : 'col-md-6'">
+            <textarea
+              *ngIf="field.type === 'textarea'"
+              [formControlName]="getFieldName(field.placeholder)"
+              [placeholder]="field.placeholder"
+              class="form-control bgEEE textMainColor"
+              cols="30"
+              rows="5"
+              [required]="field.required">
+            </textarea>
+            <input
+              *ngIf="field.type !== 'textarea'"
+              [type]="field.type"
+              [formControlName]="getFieldName(field.placeholder)"
+              [placeholder]="field.placeholder"
+              class="form-control bgEEE py-2"
+              [required]="field.required">
+          </div>
+          <div>
+            <button type="submit" class="mainBtn mx-auto d-block text-uppercase fs-5">
+              {{ contactData.form.submitText }}
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section> -->
+</div>

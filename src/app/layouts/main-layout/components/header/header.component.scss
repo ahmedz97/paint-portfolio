@@ -1,0 +1,25 @@
+// Header Component Styles
+@import '../../../../../styles.scss';
+
+.nav-link{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    transition: all 0.8s !important;
+    color: #fff !important;
+    &:hover{
+        color: var(--mainColor) !important;
+    }
+}
+select{
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    option{
+       color : #000 !important;
+       background : #fff !important;
+    }
+    
+}

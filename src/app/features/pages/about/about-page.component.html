@@ -1,0 +1,97 @@
+<div *ngIf="aboutData$ | async as aboutData">
+  <!-- Banner Section -->
+  <app-banner [bannerData]="aboutData.banner"></app-banner>
+
+  <!-- Business Description -->
+  <section class="my-5 py-5 businessDesc">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-lg-6" *ngFor="let item of aboutData.businessDesc.items">
+          <div class="p-3">
+            <figure class="position-relative">
+              <img
+                [src]="item.image"
+                class="w-100 rounded-3"
+                [alt]="item.text"
+              />
+              <figcaption
+                class="bgMainColor d-flex justify-content-between p-3 rounded-3"
+              >
+                <p class="fs-4">{{ item.text }}</p>
+                <a [routerLink]="item.link || '#'">
+                  <div class="iconBox">
+                    <i class="fa fa-angles-right"></i>
+                  </div>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- use data from home page -->
+  <div *ngIf="homeData$ | async as homeData">
+    <!-- About Counter Section -->
+    <app-counter [stats]="homeData.counter.stats"></app-counter>
+
+    <!-- Team Section -->
+    <section class="my-5 py-5 team">
+      <div class="container">
+        <app-section-title
+          [title]="homeData.team.title"
+          [titleDot]="homeData.team.titleDot"
+          [centered]="true"
+        >
+        </app-section-title>
+        <div class="row teamSlider">
+          <div
+            class="col-lg-4 col-md-6 px-3"
+            *ngFor="let member of homeData.team.members"
+          >
+            <app-team-card [member]="member"></app-team-card>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Feedback Section -->
+  <section class="feedback my-5 py-5">
+    <div class="container">
+      <app-section-title
+        [title]="aboutData.feedback.title"
+        [titleDot]="aboutData.feedback.titleDot"
+        [centered]="true"
+      >
+      </app-section-title>
+      <div class="row feedbackSlider">
+        <div
+          class="col-md-6 p-3"
+          *ngFor="let testimonial of aboutData.feedback.testimonials"
+        >
+          <div class="p-3 rounded-4 cPointer shadow cart">
+            <div class="headCart d-flex justify-content-between">
+              <figure class="d-flex w-100 align-items-center">
+                <img [src]="testimonial.image" [alt]="testimonial.name" />
+                <figcaption class="ms-3">
+                  <h3 class="text-capitalize h6 mb-0">
+                    {{ testimonial.name }}
+                  </h3>
+                  <p class="text-capitalize textMainColor">
+                    {{ testimonial.position }}
+                  </p>
+                </figcaption>
+              </figure>
+              <div>
+                <i class="fa-solid fa-ranking-star fs-2 textMainColor"></i>
+              </div>
+            </div>
+            <div>
+              <p class="text-secondary my-2">{{ testimonial.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

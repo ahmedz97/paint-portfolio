@@ -1,0 +1,6 @@
+<app-header [siteData]="(siteData$ | async) || undefined" (languageChange)="changeLanguage($event)"></app-header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<app-footer [footerData]="(footerData$ | async) || undefined"></app-footer>
+

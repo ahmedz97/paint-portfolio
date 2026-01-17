@@ -1,0 +1,140 @@
+<nav
+  class="navbar navbar-expand-lg bg-dark bg-opacity-50 navbar-dark fixed-top py-0"
+>
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">
+      <img
+        [src]="siteData?.logo"
+        class="w-100"
+        [alt]="siteData?.name + ' logo'"
+      />
+    </a>
+
+    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-none d-lg-flex">
+      <li class="nav-item" *ngFor="let navItem of siteData?.navigation">
+        <a
+          *ngIf="navItem.href.startsWith('#')"
+          class="nav-link text-uppercase ms-2"
+          [href]="navItem.href"
+        >
+          {{ navItem.text }}
+        </a>
+        <a
+          *ngIf="!navItem.href.startsWith('#')"
+          class="nav-link text-uppercase ms-2"
+          [routerLink]="navItem.href"
+        >
+          {{ navItem.text }}
+        </a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-none d-lg-flex">
+      <li class="nav-item">
+        <select
+          name="language"
+          class="form-control cPointer lang text-capitalize pb-1"
+          (change)="onLanguageChange($event)"
+        >
+          <option value="" selected hidden>select language</option>
+          <option *ngFor="let lang of siteData?.languages" [value]="lang.value">
+            {{ lang.label }}
+          </option>
+        </select>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link text-uppercase ms-2" href="#">
+          <i class="fa fa-cart-shopping"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-uppercase ms-2" href="#">
+          <i class="fa fa-magnifying-glass"></i>
+        </a>
+      </li> -->
+    </ul>
+
+    <button
+      class="navbar-toggler border-0"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#navDrawer"
+      aria-controls="navDrawer"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon textMainColor">
+        <i class="fa fa-sliders fs-4 pt-1"></i>
+      </span>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end overflow-hidden d-block d-lg-none"
+      tabindex="-1"
+      id="navDrawer"
+      aria-labelledby="navDrawerLabel"
+    >
+      <div class="offcanvas-header">
+        <a class="navbar-brand" routerLink="/">
+          <img
+            [src]="siteData?.logo"
+            class="w-50"
+            [alt]="siteData?.name + ' logo'"
+          />
+        </a>
+        <button
+          type="button"
+          class="btn-close text-reset text-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item" *ngFor="let navItem of siteData?.navigation">
+            <a
+              *ngIf="navItem.href.startsWith('#')"
+              class="nav-link text-uppercase ms-2"
+              [href]="navItem.href"
+            >
+              {{ navItem.text }}
+            </a>
+            <a
+              *ngIf="!navItem.href.startsWith('#')"
+              class="nav-link text-uppercase ms-2"
+              [routerLink]="navItem.href"
+            >
+              {{ navItem.text }}
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <select
+              name="language"
+              class="form-control cPointer lang text-capitalize pb-1"
+              (change)="onLanguageChange($event)"
+            >
+              <option value="" selected hidden></option>
+              <option
+                *ngFor="let lang of siteData?.languages"
+                [value]="lang.value"
+              >
+                {{ lang.label }}
+              </option>
+            </select>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link text-uppercase ms-2" href="#">
+              <i class="fa fa-cart-shopping"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase ms-2" href="#">
+              <i class="fa fa-magnifying-glass"></i>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

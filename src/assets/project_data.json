@@ -1,0 +1,922 @@
+{
+  "SITE": {
+    "name": "Portfolio",
+    "title": "Portfolio - Home",
+    "logo": "/assets/main-image/main-logo.webp",
+    "footerLogo": "/assets/main-image/main-logo.webp",
+    "copyright": "@ copyright 2026 by",
+    "copyrightLink": "perfect soluation 4u",
+    "languages": [
+      {
+        "value": "it",
+        "label": "Italiano"
+      },
+      {
+        "value": "en",
+        "label": "English"
+      }
+    ],
+    "navigation": [
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "about us",
+        "href": "/about"
+      },
+      {
+        "text": "services",
+        "href": "/services"
+      },
+      {
+        "text": "VR",
+        "href": "/vr"
+      },
+
+      {
+        "text": "Gallery",
+        "href": "/gallery"
+      },
+      {
+        "text": "contacts",
+        "href": "/contact"
+      }
+    ]
+  },
+  "HOME": {
+    "skitter_slider": {
+      "slides": [
+        {
+          "image": "/assets/images/bt1.jpg",
+          "welcomeText": "welcome to GMB S.R.I.S.",
+          "title": "GBM S.R.l.S <br/>Costruzione ristorazione",
+          "buttonText": "Discover more",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "/assets/images/bt2.jpg",
+          "welcomeText": "welcome to GMB S.R.I.S.",
+          "title": "GBM S.R.l.S <br/>Costruzione ristorazione",
+          "buttonText": "Discover more",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "/assets/images/bt3.jpg",
+          "welcomeText": "welcome to GMB S.R.I.S.",
+          "title": "GBM S.R.l.S <br/>Costruzione ristorazione",
+          "buttonText": "Discover more",
+          "buttonLink": "/about"
+        }
+      ]
+    },
+    "serviceSolution": {
+      "title": "WE SHAPE THE PERFECT SOLUTIONS",
+      "titleDot": ".",
+      "description": "We are committed to provid our customers with exceptional service while offering our employees the best training.",
+      "services": [
+        {
+          "number": "01",
+          "icon": "fa fa-brush",
+          "title": "gypsum board works",
+          "link": ""
+        },
+        {
+          "number": "02",
+          "icon": "fa fa-paint-roller",
+          "title": "interior & exterior painting",
+          "link": ""
+        },
+        {
+          "number": "03",
+          "icon": "fa fa-palette",
+          "title": "interior & exterior designing",
+          "link": ""
+        },
+        {
+          "number": "04",
+          "icon": "fa fa-spray-can",
+          "title": "white putty & plastering",
+          "link": ""
+        }
+      ]
+    },
+    "downtown": {
+      "images": [
+        {
+          "src": "/assets/images/bt1.jpg",
+          "class": "w-100 rounded-3 grayImg"
+        },
+        {
+          "src": "/assets/images/bt2.jpg",
+          "class": "w-100 rounded-3 grayImg topImg"
+        }
+      ],
+      "title": "WE'RE THE BEST AGENCY\nIN DOWNTOWN",
+      "titleDot": ".",
+      "subtitle": "WE ARE COMMITTED TO PROVIDING OUR CUSTOMERS WITH EXCEPTIONAL SERVICE WHILE OFFERING OUR EMPLOYEES THE BEST TRAINING.",
+      "description": "Lorem Ipsum is simply dummy text of free available in market the printing and typesetting industry has been the industry's standard dummy text ever.",
+      "features": [
+        "Nsectetur cing elit.",
+        "Suspe ndisse suscipit sagittis leo.",
+        "Entum estibulum dignissim posuere."
+      ],
+      "since": {
+        "text": "since\n2008"
+      },
+      "buttonText": "load more posts",
+      "buttonLink": "/about"
+    },
+    "video": {
+      "title": "experience us live",
+      "titleDot": ".",
+      "videoUrl": "https://www.youtube.com/embed/BOXYG4llnKY?color=white",
+      "heading": "agency that gets\nexcited about",
+      "buttonText": "read more",
+      "buttonLink": "/about"
+    },
+    "portfolio": {
+      "title": "",
+      "titleDot": "",
+      "filters": [
+        {
+          "text": "All",
+          "filter": "all"
+        },
+        {
+          "text": "commercial buildings",
+          "filter": ".branding"
+        },
+        {
+          "text": "residential Homes",
+          "filter": ".illustration"
+        },
+        {
+          "text": "restaurants & cafes",
+          "filter": ".photography"
+        },
+        {
+          "text": "educational institutions",
+          "filter": ".web_design"
+        }
+      ],
+      "items": [
+        {
+          "image": "/assets/images/work-5.jpg",
+          "category": "categore name",
+          "title": "categore item name",
+          "link": "",
+          "classes": "branding photography"
+        },
+        {
+          "image": "/assets/images/post-1.jpg",
+          "category": "categore name",
+          "title": "categore item name",
+          "link": "",
+          "classes": "illustration web_design"
+        },
+        {
+          "image": "/assets/images/bt1.jpg",
+          "category": "categore name",
+          "title": "categore item name",
+          "link": "",
+          "classes": "branding photography"
+        },
+        {
+          "image": "/assets/images/bt2.jpg",
+          "category": "categore name",
+          "title": "categore item name",
+          "link": "",
+          "classes": "illustration web_design"
+        },
+        {
+          "image": "/assets/images/bt3.jpg",
+          "category": "categore name",
+          "title": "categore item name",
+          "link": "",
+          "classes": "branding web_design"
+        },
+        {
+          "image": "/assets/images/bt4.jpg",
+          "category": "categore name",
+          "title": "categore item name",
+          "link": "",
+          "classes": "photography web_design"
+        }
+      ],
+      "pagination": {
+        "pages": [1, 2, 3]
+      }
+    },
+    "counter": {
+      "stats": [
+        {
+          "value": 5489,
+          "label": "projects completed",
+          "speed": 5000
+        },
+        {
+          "value": 480,
+          "label": "active clients",
+          "speed": 5000
+        },
+        {
+          "value": 626,
+          "label": "cups of coffee",
+          "speed": 5000
+        },
+        {
+          "value": 9711,
+          "label": "happy clients",
+          "speed": 5000
+        }
+      ],
+      "commitment": {
+        "title": "WE'RE COMMITTED TO DELIVER HIGH QUALITY PROJECTS .",
+        "features": [
+          {
+            "number": "01",
+            "title": "TOTAL DESIGN FREEDOM FOR EVERYONE",
+            "subtitle": "CORE FEATURES"
+          },
+          {
+            "number": "02",
+            "title": "BASIC RULES OF RUNNING WEB AGENCY",
+            "subtitle": "CORE FEATURES"
+          }
+        ],
+        "trusted": {
+          "title": "WE'RE TRUSTED BY MORE\nTHAN 6260 CLIENTS",
+          "titleDot": ".",
+          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, simply free text by injected humour, or randomised.",
+          "image": "/assets/images/team/t2.jpg",
+          "features": [
+            "Nsectetur cing elit.",
+            "Suspe ndisse suscipit sagittis leo.",
+            "Entum estibulum dignissim posuere.",
+            "If you are going to use a passage.",
+            "Lorem Ipsum on the tend to repeat."
+          ]
+        }
+      }
+    },
+    "team": {
+      "title": "meet the expert team",
+      "titleDot": ".",
+      "bigBoss": {
+        "image": "/assets/images/team/man1.jpg",
+        "name": "rose ford",
+        "position": "co-founder",
+        "socialLinks": [
+          {
+            "icon": "fa-brands fa-facebook-f",
+            "link": ""
+          },
+          {
+            "icon": "fa-brands fa-twitter",
+            "link": ""
+          },
+          {
+            "icon": "fa-brands fa-github",
+            "link": ""
+          }
+        ]
+      },
+      "members": [
+        {
+          "image": "/assets/images/team/man2.jpg",
+          "name": "rose ford",
+          "position": "co-founder",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/man1.jpg",
+          "name": "rose ford",
+          "position": "co-founder",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/t3.jpg",
+          "name": "rose ford",
+          "position": "co-founder",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/t4.jpg",
+          "name": "rose ford",
+          "position": "co-founder",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/t1.jpg",
+          "name": "rose ford",
+          "position": "co-founder",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/weman1.jpg",
+          "name": "rose ford",
+          "position": "co-founder",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        }
+      ]
+    },
+    "aboutCounter": {
+      "icon": "fa fa-mobile-screen-button",
+      "text": "great things in business are never done by one person.",
+      "highlightedText": "they're done by a team of people."
+    },
+    "solutionBox": {
+      "title": "best design agency soluations",
+      "titleDot": ".",
+      "tabs": [
+        {
+          "id": "mission",
+          "label": "our mission",
+          "content": "mission\nThere are many variations of passages of avaialable but the majority have in some form, by injected humou or words which don't look even slightly believable. There are many variations of but the majority have suffered."
+        },
+        {
+          "id": "vision",
+          "label": "our vision",
+          "content": "vision\nThere are many variations of passages of avaialable but the majority have in some form, by injected humou or words which don't look even slightly believable. There are many variations of but the majority have suffered."
+        },
+        {
+          "id": "history",
+          "label": "our history",
+          "content": "history\nThere are many variations of passages of avaialable but the majority have in some form, by injected humou or words which don't look even slightly believable. There are many variations of but the majority have suffered."
+        }
+      ],
+      "description": "There are many variations of passages of avaialable but the majority have in some form, by injected humou or words which don't look even slightly believable. There are many variations of but the majority have suffered.",
+      "image": "/assets/images/team/t1.jpg",
+      "features": [
+        "Nsectetur cing elit.",
+        "Suspe ndisse suscipit sagittis leo.",
+        "Entum estibulum dignissim posuere.",
+        "If you are going to use a passage.",
+        "Lorem Ipsum on the tend to repeat."
+      ]
+    },
+    "blogBox": {
+      "title": "LATEST NEWS & ARTICLES",
+      "titleDot": ".",
+      "buttonText": "load more posts",
+      "buttonLink": "",
+      "posts": [
+        {
+          "image": "/assets/images/bt3.jpg",
+          "date": "20 MAR",
+          "author": "Admin",
+          "comments": "2 comments",
+          "title": "LEVERAGE AGILE PROVIDE TO A ROBUST",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "link": "#"
+        },
+        {
+          "image": "/assets/images/post-1.jpg",
+          "date": "20 MAR",
+          "author": "Admin",
+          "comments": "2 comments",
+          "title": "LEVERAGE AGILE PROVIDE TO A ROBUST",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "link": "#"
+        },
+        {
+          "image": "/assets/images/post-2.jpg",
+          "date": "20 MAR",
+          "author": "Admin",
+          "comments": "2 comments",
+          "title": "LEVERAGE AGILE PROVIDE TO A ROBUST",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "link": "#"
+        }
+      ]
+    }
+  },
+  "FOOTER": {
+    "logo": "/assets/main-image/main-logo.webp",
+    "description": "Welcome to our web design agency. Lorem ipsum simply free text dolor sited amet cons cing elit.",
+    "socialLinks": [
+      {
+        "icon": "fa-brands fa-facebook-f",
+        "link": "https://www.facebook.com"
+      },
+      {
+        "icon": "fa-brands fa-twitter",
+        "link": "https://www.twitter.com"
+      },
+      {
+        "icon": "fa-brands fa-linkedin-in",
+        "link": "https://www.linkedin.com"
+      },
+      {
+        "icon": "fa-brands fa-youtube",
+        "link": "https://www.youtube.com"
+      }
+    ],
+    "explore": {
+      "title": "Explor",
+      "links": [
+        {
+          "text": "about us",
+          "link": "/about"
+        },
+        {
+          "text": "our portfolio",
+          "link": "/portfolio"
+        },
+        {
+          "text": "latest news",
+          "link": "/blog"
+        },
+        {
+          "text": "contact us",
+          "link": "/contact"
+        },
+        {
+          "text": "support",
+          "link": "#"
+        },
+        {
+          "text": "privacy policy",
+          "link": "#"
+        },
+        {
+          "text": "terms of use",
+          "link": "#"
+        },
+        {
+          "text": "help",
+          "link": "#"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "address": {
+        "icon": "fa fa-location-dot",
+        "text": "66 Broklyn Street, New York United States of America",
+        "link": ""
+      },
+      "phone": {
+        "icon": "fa fa-phone-volume",
+        "text": "01126600995",
+        "link": "tel:01094291525"
+      },
+      "email": {
+        "icon": "fa fa-envelope-circle-check",
+        "text": "portfolio@gmail.com",
+        "link": "mailto:portfolio@gmail.com"
+      }
+    },
+    "newsletter": {
+      "title": "Our Newsletter",
+      "placeholder": "Enter Address",
+      "description": "Sign up for our latest news & articles. We won't give you spam mails."
+    },
+    "copyright": "@ copyright 2026 by",
+    "copyrightLink": " perfect soluation 4u"
+  },
+  "ABOUT": {
+    "banner": {
+      "title": "About Us",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "about us"
+      }
+    },
+    "businessDesc": {
+      "items": [
+        {
+          "image": "/assets/images/bt1.jpg",
+          "text": "Lorem ipsum dolor sit amet.",
+          "link": ""
+        },
+        {
+          "image": "/assets/images/bt1.jpg",
+          "text": "Lorem ipsum dolor sit amet.",
+          "link": ""
+        }
+      ]
+    },
+    "feedback": {
+      "title": "customer feedback",
+      "titleDot": ".",
+      "testimonials": [
+        {
+          "image": "/assets/images/team/t3.jpg",
+          "name": "ahmed mohamed",
+          "position": "ceo & founder",
+          "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, possimus eius numquam consequatur nulla quod incidunt optio repudiandae molestias saepe! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, tempore!"
+        },
+        {
+          "image": "/assets/images/team/t2.jpg",
+          "name": "ahmed mohamed",
+          "position": "ceo & founder",
+          "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, possimus eius numquam consequatur nulla quod incidunt optio repudiandae molestias saepe! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, tempore!"
+        },
+        {
+          "image": "/assets/images/team/t1.jpg",
+          "name": "ahmed mohamed",
+          "position": "ceo align-items-center& founder",
+          "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, possimus eius numquam consequatur nulla quod incidunt optio repudiandae molestias saepe! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, tempore!"
+        }
+      ]
+    }
+  },
+  "CONTACT": {
+    "banner": {
+      "title": "Contact",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Contact"
+      }
+    },
+    "offices": {
+      "title": "OFFICES NEAR YOU",
+      "titleDot": ".",
+      "items": [
+        {
+          "name": "BALTIMORE",
+          "address": "22 Texas West Hills",
+          "email": "portfolio@gmail.com",
+          "phone": "666 888 000"
+        },
+        {
+          "name": "BALTIMORE",
+          "address": "22 Texas West Hills",
+          "email": "portfolio@gmail.com",
+          "phone": "666 888 000"
+        },
+        {
+          "name": "BALTIMORE",
+          "address": "22 Texas West Hills",
+          "email": "portfolio@gmail.com",
+          "phone": "666 888 000"
+        },
+        {
+          "name": "BALTIMORE",
+          "address": "22 Texas West Hills",
+          "email": "portfolio@gmail.com",
+          "phone": "666 888 000"
+        }
+      ]
+    },
+    "map": {
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.5254081040325!2d31.143781175008403!3d29.9930664210042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847c18091bf0d%3A0xb141073da15fe4fa!2sPerfect%20Solution%204%20U!5e0!3m2!1sen!2seg!4v1713100217118!5m2!1sen!2seg"
+    },
+    "form": {
+      "title": "write us a message",
+      "titleDot": ".",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "Your Name",
+          "required": true
+        },
+        {
+          "type": "email",
+          "placeholder": "Email Address",
+          "required": true
+        },
+        {
+          "type": "tel",
+          "placeholder": "Phone Number",
+          "required": false
+        },
+        {
+          "type": "text",
+          "placeholder": "Subject",
+          "required": false
+        },
+        {
+          "type": "textarea",
+          "placeholder": "Write Message",
+          "required": true
+        }
+      ],
+      "submitText": "send message"
+    }
+  },
+  "GALLERY": {
+    "banner": {
+      "title": "Gallery",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Gallery"
+      }
+    },
+    "description": "Gallery page content will be implemented here.",
+    "images": [
+      {
+        "src": "/assets/images/bt1.jpg"
+      },
+      {
+        "src": "/assets/images/bt2.jpg"
+      },
+      {
+        "src": "/assets/images/bt3.jpg"
+      },
+      {
+        "src": "/assets/images/bt4.jpg"
+      },
+      {
+        "src": "/assets/images/post-1.jpg"
+      },
+      {
+        "src": "/assets/images/post-2.jpg"
+      },
+      {
+        "src": "/assets/images/work-5.jpg"
+      },
+      {
+        "src": "/assets/images/bt1.jpg"
+      },
+      {
+        "src": "/assets/images/bt2.jpg"
+      },
+      {
+        "src": "/assets/images/bt3.jpg"
+      },
+      {
+        "src": "/assets/images/bt4.jpg"
+      },
+      {
+        "src": "/assets/images/post-1.jpg"
+      },
+      {
+        "src": "/assets/images/post-2.jpg"
+      },
+      {
+        "src": "/assets/images/work-5.jpg"
+      },
+      {
+        "src": "/assets/images/bt1.jpg"
+      },
+      {
+        "src": "/assets/images/bt2.jpg"
+      },
+      {
+        "src": "/assets/images/bt3.jpg"
+      },
+      {
+        "src": "/assets/images/bt4.jpg"
+      },
+      {
+        "src": "/assets/images/post-1.jpg"
+      },
+      {
+        "src": "/assets/images/post-2.jpg"
+      },
+      {
+        "src": "/assets/images/work-5.jpg"
+      },
+      {
+        "src": "/assets/images/bt1.jpg"
+      },
+      {
+        "src": "/assets/images/bt2.jpg"
+      },
+      {
+        "src": "/assets/images/bt3.jpg"
+      },
+      {
+        "src": "/assets/images/bt4.jpg"
+      },
+      {
+        "src": "/assets/images/post-1.jpg"
+      },
+      {
+        "src": "/assets/images/post-2.jpg"
+      },
+      {
+        "src": "/assets/images/work-5.jpg"
+      },
+      {
+        "src": "/assets/images/bt1.jpg"
+      },
+      {
+        "src": "/assets/images/bt2.jpg"
+      },
+      {
+        "src": "/assets/images/bt3.jpg"
+      }
+    ],
+    "pagination": {
+      "pages": [1, 2, 3]
+    }
+  },
+  "VR": {
+    "banner": {
+      "title": "VR",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "VR"
+      }
+    }
+  },
+  "SERVICES": {
+    "banner": {
+      "title": "Services",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Services"
+      }
+    },
+    "services": {
+      "items": [
+        {
+          "icon": "fa-regular fa-lightbulb",
+          "title": "Modern Designing",
+          "description": "Need something changed or is there something not quite working",
+          "link": ""
+        },
+        {
+          "icon": "fa fa-money-bill-trend-up",
+          "title": "Marketing Strategy",
+          "description": "Need something changed or is there something not quite working",
+          "link": ""
+        },
+        {
+          "icon": "fa fa-camera-retro",
+          "title": "Digital Products",
+          "description": "Need something changed or is there something not quite working",
+          "link": ""
+        },
+        {
+          "icon": "fa fa-laptop-code",
+          "title": "Website Development",
+          "description": "Need something changed or is there something not quite working",
+          "link": ""
+        }
+      ]
+    },
+    "work": {
+      "title": "WE WORK WITH INDUSTRIES",
+      "titleDot": ".",
+      "tabs": [
+        {
+          "id": "technology",
+          "label": "Gypsum Board works",
+          "image": "/assets/images/team/t1.jpg",
+          "description": "We specialize in installing gypsum board systems, offering custom ceilings, floating ceilings, decorative wall panels, hidden lighting systems, and acoustic and thermal solutions.",
+          "highlightedText": "works in all types of buildings.",
+          "features": [
+            "custom ceilings.",
+            "floating ceilings.",
+            "decorative wall panels.",
+            "hidden lighting systems.",
+            "acoustic and thermal solutions."
+          ]
+        },
+        {
+          "id": "support",
+          "label": "interior & exterior painting",
+          "image": "/assets/images/team/t3.jpg",
+          "description": "We offer comprehensive interior and exterior painting services, ensuring high-quality finishing, smooth surfaces, color selection, durable and clean application, and protection against weather and UV rays.",
+          "highlightedText": "different types of buildings.",
+          "features": [
+            "high-quality finishing.",
+            "smooth surfaces.",
+            "color selection.",
+            "durable and clean application.",
+            "protection against weather and UV rays."
+          ]
+        },
+        {
+          "id": "install",
+          "label": "white putty & plastering",
+          "image": "/assets/images/team/t2.jpg",
+          "description": "We provide professional white putty and plastering services, offering ultra-smooth finishing, perfect base for premium painting, superior adhesion to various surfaces, easy application and clean removal, environmentally friendly and low VOC, and long-lasting and durable protection.",
+          "highlightedText": "features and benefits of white putty & plastering.",
+          "features": [
+            "ultra-smooth finishing.",
+            "perfect base for premium painting.",
+            "superior adhesion to various surfaces.",
+            "easy application and clean removal.",
+            "environmentally friendly and low VOC.",
+            "long-lasting and durable protection."
+          ]
+        },
+        {
+          "id": "work",
+          "label": "where we work",
+          "image": "/assets/images/team/t2.jpg",
+          "description": "We are a leading gypsum board installation company, specializing in custom ceilings, floating ceilings, decorative wall panels, hidden lighting systems, and acoustic and thermal solutions.",
+          "highlightedText": "they're done by a team of people working together.",
+          "features": [
+            "residential buildings.",
+            "commercial campanies.",
+            "hospitals & medical centers.",
+            "educational institutions.",
+            "retail & shopping malls.",
+            "offices & business centers.",
+            "restaurants & cafes.",
+            "hotels & resorts."
+          ]
+        }
+      ]
+    }
+  }
+}

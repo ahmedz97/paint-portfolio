@@ -1,0 +1,24 @@
+<section #counterSection>
+  <div class="container-fluid">
+    <div class="counterBox">
+      <div class="box1 row g-3 align-items-center">
+        <div
+          class="col-lg-3 col-md-6"
+          *ngFor="let stat of stats; let i = index"
+        >
+          <div class="text-center shadow p-3 rounded-3 overflow-hidden">
+            <div
+              class="h2 textMainColor counter pt-3"
+              [attr.data-to]="stat.value"
+              [attr.data-speed]="stat.speed"
+            >
+              {{ getCounterValue(i, stat.value) | number : "1.0-0" }}
+            </div>
+            <p class="h5 text-uppercase text-white">{{ stat.label }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

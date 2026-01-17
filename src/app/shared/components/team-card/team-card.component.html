@@ -1,0 +1,26 @@
+<div class="cardTeam">
+  <figure class="position-relative rounded-3 overflow-hidden h100">
+    <img
+      [src]="member.image"
+      class="w-100 h-100"
+      [alt]="member.name"
+    />
+    <figcaption>
+      <ul class="list-unstyled d-flex justify-content-center mt-2">
+        <a
+          *ngFor="let social of member.socialLinks"
+          [href]="social.link || '#'"
+        >
+          <li class="socialIcon shadow me-2">
+            <i [class]="social.icon"></i>
+          </li>
+        </a>
+      </ul>
+    </figcaption>
+  </figure>
+  <div class="text-center">
+    <h2 class="h4 text-uppercase mb-0">{{ member.name }}</h2>
+    <p class="text-secondary text-uppercase">{{ member.position }}</p>
+  </div>
+</div>
+

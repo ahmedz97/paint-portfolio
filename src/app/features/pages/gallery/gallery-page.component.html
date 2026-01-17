@@ -1,0 +1,154 @@
+<div *ngIf="galleryData$ | async as galleryData">
+  <!-- Banner Section -->
+  <app-banner [bannerData]="galleryData.banner"></app-banner>
+
+  <!-- Gallery Section -->
+  <div class="container py-5">
+    <h5 class="h1 text-uppercase">
+      {{ galleryData.banner.title }}
+    </h5>
+    <p>{{ galleryData.description }}</p>
+
+    <!-- Gallery Images Grid -->
+    <div class="row g-4 mb-4">
+      <div
+        class="col-lg-3 col-md-4 col-sm-6 col-12"
+        *ngFor="let image of displayedImages; let i = index"
+      >
+        <div
+          class="gallery-item cPointer overflow-hidden rounded-3"
+          (click)="openLightbox(i)"
+        >
+          <img
+            [src]="image"
+            class="w-100 rounded-3 grayImg"
+            [alt]="'Gallery Image ' + (i + 1)"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div
+      class="pagination-container d-flex justify-content-center align-items-center flex-wrap gap-2"
+      *ngIf="totalPages > 1"
+    >
+      <button
+        class="pagination-btn"
+        [disabled]="currentPage === 1"
+        (click)="goToPage(currentPage - 1)"
+        aria-label="Previous Page"
+      >
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <button
+        *ngFor="let page of getPageNumbers()"
+        class="pagination-btn"
+        [class.active]="page === currentPage"
+        (click)="goToPage(page)"
+      >
+        {{ page }}
+      </button>
+      <button
+        class="pagination-btn"
+        [disabled]="currentPage === totalPages"
+        (click)="goToPage(currentPage + 1)"
+        aria-label="Next Page"
+      >
+        <i class="fa fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Lightbox Modal -->
+    @if (isLightboxOpen) {
+    <div class="lightbox-overlay pt-5" (click)="closeLightbox()">
+      <div class="lightbox-container pt-5" (click)="$event.stopPropagation()">
+        <!-- Close Button -->
+        <button
+          class="lightbox-close rounded-circle flexCenter cPointer"
+          (click)="closeLightbox()"
+          aria-label="Close"
+        >
+          <i class="fa fa-times"></i>
+        </button>
+
+        <!-- Navigation Buttons -->
+        @if (currentImageIndex > 0) {
+        <button
+          class="lightbox-nav lightbox-prev rounded-circle flexCenter cPointer"
+          (click)="prevImage()"
+          aria-label="Previous"
+        >
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        } @if (currentImageIndex < allImages.length - 1) {
+        <button
+          class="lightbox-nav lightbox-next rounded-circle flexCenter cPointer"
+          (click)="nextImage()"
+          aria-label="Next"
+        >
+          <i class="fa fa-chevron-right"></i>
+        </button>
+        }
+
+        <!-- Zoom Controls -->
+        <div class="lightbox-controls d-flex gap-2">
+          <button
+            class="control-btn rounded-circle flexCenter cPointer"
+            (click)="zoomIn()"
+            aria-label="Zoom In"
+            title="Zoom In (+)"
+          >
+            <i class="fa fa-search-plus"></i>
+          </button>
+          <button
+            class="control-btn rounded-circle flexCenter cPointer"
+            (click)="zoomOut()"
+            aria-label="Zoom Out"
+            title="Zoom Out (-)"
+          >
+            <i class="fa fa-search-minus"></i>
+          </button>
+          <button
+            class="control-btn rounded-circle flexCenter cPointer"
+            (click)="resetZoom()"
+            aria-label="Reset Zoom"
+            title="Reset Zoom"
+          >
+            <i class="fa fa-undo"></i>
+          </button>
+        </div>
+
+        <!-- Image Container -->
+        <div
+          class="lightbox-image-container w-100 h-100 flexCenter overflow-hidden position-relative"
+        >
+          <img
+            [src]="currentImage"
+            [alt]="'Gallery image ' + (currentImageIndex + 1)"
+            class="lightbox-image rounded-3 overflow-hidden"
+            [style.transform]="
+              'scale(' +
+              zoomLevel +
+              ') translate(' +
+              imagePositionX +
+              'px, ' +
+              imagePositionY +
+              'px)'
+            "
+            [style.cursor]="zoomLevel > 1 ? 'move' : 'default'"
+            (mousedown)="onImageMouseDown($event)"
+            (dragstart)="$event.preventDefault()"
+          />
+        </div>
+
+        <!-- Image Counter -->
+        <div class="lightbox-counter">
+          {{ currentImageIndex + 1 }} / {{ allImages.length }}
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

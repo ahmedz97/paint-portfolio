@@ -1,0 +1,329 @@
+<div *ngIf="homeData$ | async as homeData">
+  <!-- Hero Slider -->
+  <div class="hero-slider position-relative mb-0">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template
+        carouselSlide
+        *ngFor="let slide of homeData.skitter_slider.slides"
+      >
+        <div class="slide-item position-relative">
+          <img [src]="slide.image" class="w-100" [alt]="slide.title" />
+          <div
+            class="label_text position-absolute bg-dark bg-opacity-25 d-flex align-items-center justify-content-center"
+          >
+            <div>
+              <p class="fs-5 ps-0">{{ slide.welcomeText }}</p>
+              <h1
+                class="text-uppercase text-white"
+                [innerHTML]="slide.title | nl2br"
+              ></h1>
+              <a
+                [routerLink]="slide.buttonLink"
+                class="btn mainBtn text-capitalize fs-5"
+              >
+                {{ slide.buttonText }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+    <!-- <div class="curve-top"></div>
+    <div class="curve-bottom"></div>
+    <div class="line-top"></div> -->
+  </div>
+
+  <!-- Service Solution Section -->
+  <section class="serviceSoluation py-5">
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-lg-6 col-md-12">
+          <app-section-title
+            [title]="homeData.serviceSolution.title"
+            [titleDot]="homeData.serviceSolution.titleDot"
+            [description]="homeData.serviceSolution.description"
+          >
+          </app-section-title>
+        </div>
+        <app-feature-card [services]="homeData.serviceSolution.services">
+        </app-feature-card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Downtown Section -->
+  <section class="my-5 downtown">
+    <div class="container overflow-hidden">
+      <div class="row g-4">
+        <div class="col-md-5 offset-1">
+          <div class="imgBox">
+            <img
+              *ngFor="let img of homeData.downtown.images"
+              [src]="img.src"
+              [class]="img.class"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="ps-3">
+            <app-section-title
+              [title]="homeData.downtown.title"
+              [titleDot]="homeData.downtown.titleDot"
+            >
+            </app-section-title>
+            <p class="text-capitalize text-secondary fw-normal">
+              {{ homeData.downtown.subtitle }}
+            </p>
+            <p class="text-secondary">{{ homeData.downtown.description }}</p>
+            <div class="row g-3 mb-4">
+              <div class="col-xl-8">
+                <ul class="list-unstyled ms-3 text-secondary">
+                  <li
+                    class="text-capitalize my-2 d-flex"
+                    *ngFor="let feature of homeData.downtown.features"
+                  >
+                    <i class="fa fa-check me-2 textMainColor"></i>
+                    {{ feature }}
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4">
+                <div class="border-start border-warning ps-5 border-2">
+                  <div class="bg-dark rounded-circle text-white since fs-5">
+                    {{ homeData.downtown.since.text }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              [routerLink]="homeData.downtown.buttonLink"
+              class="text-center w-fit mx-auto"
+            >
+              <button class="mainBtn text-capitalize fs-5">
+                {{ homeData.downtown.buttonText }}
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video pt-5">
+    <div class="container">
+      <app-section-title
+        [title]="homeData.video.title"
+        [titleDot]="homeData.video.titleDot"
+        [centered]="true"
+      >
+      </app-section-title>
+      <figure class="position-relative overflow-hidden mb-0">
+        <div
+          class="videoDesc bgMainColor d-flex justify-content-center flex-column"
+        >
+          <div class="videoBox border border-2 border-black rounded-circle p-2">
+            <div class="icon contactIcon cPointer" (click)="openVideo()">
+              <i class="fa fa-play"></i>
+            </div>
+          </div>
+          <h6
+            class="text-capitalize h1 ps-5"
+            [innerHTML]="homeData.video.heading | nl2br"
+          ></h6>
+          <a
+            [routerLink]="homeData.video.buttonLink"
+            class="align-self-center mt-3"
+          >
+            <button class="blackBtn text-capitalize fs-5">
+              {{ homeData.video.buttonText }}
+            </button>
+          </a>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center flex-wrap">
+        <!-- <app-section-title
+          [title]="homeData.portfolio.title"
+          [titleDot]="homeData.portfolio.titleDot"
+          class="mb-0"
+        >
+        </app-section-title> -->
+        <div class="controls mb-4 mt-1 fs-5">
+          <button
+            *ngFor="let filter of homeData.portfolio.filters"
+            type="button"
+            class="border-0 bg-transparent position-relative text-capitalize mx-1 pe-3 ps-0 mb-1 pb-2"
+            [attr.data-filter]="filter.filter"
+            [class.mixitup-control-active]="filter.filter === 'all'"
+          >
+            {{ filter.text }}
+          </button>
+        </div>
+      </div>
+      <div class="row gy-4" #portfolioContainer>
+        <div
+          *ngFor="let item of homeData.portfolio.items"
+          [class]="'col-lg-4 col-md-6 mix ' + item.classes"
+        >
+          <div class="item position-relative overflow-hidden">
+            <figure class="mb-0 rounded-3 overflow-hidden grayImg">
+              <img
+                [src]="item.image"
+                class="w-100 cPointer"
+                [alt]="item.title"
+              />
+              <figcaption class="bg-dark text-white p-3 rounded-3">
+                <h2 class="fs-6 text-uppercase position-relative">
+                  {{ item.category }}
+                </h2>
+                <a [routerLink]="item.link || '#'">
+                  <h3 class="h4 text-uppercase text-white">{{ item.title }}</h3>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Counter Section -->
+  <app-counter [stats]="homeData.counter.stats"></app-counter>
+
+  <!-- Team Section -->
+  <section class="my-5 py-5 team">
+    <div class="container">
+      <app-section-title
+        [title]="homeData.team.title"
+        [titleDot]="homeData.team.titleDot"
+        [centered]="true"
+      >
+      </app-section-title>
+
+      <div class="bigBoss">
+        <div
+          class="row g-3 align-items-center bg-light p-3 rounded-3 border mb-4 flex-sm-row flex-column"
+        >
+          <h3 class="text-center text-uppercase textMainColor">Big Boss</h3>
+          <div class="col-lg-4 col-md-6">
+            <figure class="mb-0 mx-auto">
+              <img
+                src="/assets/images/team/man1.jpg"
+                class="w-100 rounded-3"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <figcaption class="text-center text-md-start">
+              <h2 class="h4 text-uppercase mb-0">rose ford</h2>
+              <p class="text-secondary text-uppercase">co-founder</p>
+            </figcaption>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row teamSlider">
+        <div
+          class="col-lg-4 col-md-6 px-3"
+          *ngFor="let member of homeData.team.members"
+        >
+          <app-team-card [member]="member"></app-team-card>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <!-- <section class="blogBox py-5">
+    <div class="container">
+      <app-section-title
+        [title]="homeData.blogBox.title"
+        [titleDot]="homeData.blogBox.titleDot"
+        [centered]="true"
+      >
+      </app-section-title>
+      <div class="row g-3">
+        <div
+          class="col-lg-4 col-md-6"
+          *ngFor="let post of homeData.blogBox.posts"
+        >
+          <a [routerLink]="post.link || '#'">
+            <figure class="mb-0 position-relative grayImg">
+              <img
+                [src]="post.image"
+                class="w-100 rounded-3"
+                [alt]="post.title"
+              />
+              <figcaption
+                class="blogContent bg-white d-flex justify-content-evenly shadow p-2 py-3 mx-auto flex-wrap rounded-3"
+              >
+                <div class="me-2">
+                  <i class="fa-regular me-1 textMainColor fa-clock-four"></i>
+                  <span class="text-muted text-uppercase">{{ post.date }}</span>
+                </div>
+                <div class="me-2">
+                  <i class="fa-regular me-1 textMainColor fa-circle-user"></i>
+                  <span class="text-muted text-uppercase">{{
+                    post.author
+                  }}</span>
+                </div>
+                <div class="me-2">
+                  <i class="fa-regular me-1 textMainColor fa-comments"></i>
+                  <span class="text-muted text-uppercase">{{
+                    post.comments
+                  }}</span>
+                </div>
+              </figcaption>
+            </figure>
+            <div class="blogDesc text-center mt-5">
+              <h2 class="h4 text-uppercase">{{ post.title }}</h2>
+              <p class="text-secondary fs-5">{{ post.description }}</p>
+              <div class="socialIcon mx-auto cPointer">
+                <i class="fa fa-angle-right fa-beat"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a
+          [routerLink]="homeData.blogBox.buttonLink || '#'"
+          class="text-center w-fit mx-auto"
+        >
+          <button class="mainBtn text-uppercase fs-5">
+            {{ homeData.blogBox.buttonText }}
+          </button>
+        </a>
+      </div>
+    </div>
+  </section> -->
+</div>
+
+<!-- Video Popup -->
+<div
+  class="body-overlay"
+  id="body-overlay"
+  *ngIf="showVideo"
+  (click)="closeVideo()"
+></div>
+<div class="video-popup" *ngIf="showVideo">
+  <ng-container *ngIf="homeData$ | async as data">
+    <iframe
+      class="w-100 mb-0 h-100 rounded-3"
+      [src]="getSafeVideoUrl(data.video.videoUrl)"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen
+      loading="lazy"
+    >
+    </iframe>
+  </ng-container>
+</div>

@@ -1,0 +1,109 @@
+<div *ngIf="serviceData$ | async as serviceData">
+  <!-- banner -->
+  <app-banner [bannerData]="serviceData.banner"></app-banner>
+
+  <!-- service section -->
+  <section class="services py-5 my-5">
+    <div class="container">
+      <div class="row g-3">
+        <div
+          class="col-xl-3 col-lg-4 col-md-6"
+          *ngFor="let item of serviceData.services.items"
+        >
+          <div class="contactContent p-4 rounded-3 shadow position-relative">
+            <i [class]="item.icon + ' fs-1 my-4 textMainColor'"></i>
+            <h5 class="h3 text-capitalize">{{ item.title }}</h5>
+            <p class="text-secondary opacity-75 my-3">
+              {{ item.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- work with industries section -->
+  <section class="work my-5 py-5">
+    <div class="container">
+      <div class="title">
+        <h2 class="text-uppercase h1 d-inline-block">
+          {{ serviceData.work.title }}
+          <span class="textMainColor h2 fw-bold ms-1">{{
+            serviceData.work.titleDot
+          }}</span>
+        </h2>
+      </div>
+
+      <ul class="workHead list-unstyled my-5 row g-3">
+        <div
+          class="col-lg-3 col-md-4 col-sm-6"
+          *ngFor="let tab of serviceData.work.tabs"
+        >
+          <li
+            [attr.data-soluation]="tab.id"
+            [class.active]="activeTab === tab.id"
+            (click)="switchWorkTab(tab.id)"
+            class="px-3 text-capitalize text-center py-2 rounded-3 position-relative cPointer"
+          >
+            {{ tab.label }}
+          </li>
+        </div>
+      </ul>
+
+      <div class="workDesc">
+        <div
+          *ngFor="let tab of serviceData.work.tabs"
+          [class.d-none]="activeTab !== tab.id"
+          [class]="'row ' + tab.id + ' justify-content-between'"
+        >
+          <div class="col-sm-4">
+            <figure>
+              <img
+                [src]="tab.image"
+                class="w-100 rounded-3"
+                [alt]="tab.label"
+              />
+            </figure>
+          </div>
+          <div class="col-sm-7">
+            <p class="text-secondary">
+              {{ tab.description }}
+            </p>
+            <p class="textMainColor text-capitalize">
+              {{ tab.highlightedText }}
+            </p>
+            <ul class="list-unstyled pt-2 fontsm">
+              <li
+                *ngFor="let feature of tab.features"
+                class="text-capitalize my-2 text-secondary"
+              >
+                <i class="fa fa-check me-2 textMainColor"></i>
+                {{ feature }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div *ngIf="homeData$ | async as homeData">
+  <!-- Service Solution Section -->
+  <section class="serviceSoluation py-5">
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-lg-6 col-md-12">
+          <app-section-title
+            [title]="homeData.serviceSolution.title"
+            [titleDot]="homeData.serviceSolution.titleDot"
+            [description]="homeData.serviceSolution.description"
+          >
+          </app-section-title>
+        </div>
+        <app-feature-card [services]="homeData.serviceSolution.services">
+        </app-feature-card>
+      </div>
+    </div>
+  </section>
+</div>
