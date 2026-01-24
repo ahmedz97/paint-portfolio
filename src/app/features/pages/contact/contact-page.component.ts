@@ -9,6 +9,7 @@ import {
 } from "@angular/forms";
 import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
 import { Observable, Subscription } from "rxjs";
+import { finalize, take } from "rxjs/operators";
 import { TranslateService } from "@ngx-translate/core";
 import { ProjectDataService } from "@core/services/project-data.service";
 import { SpinnerFacadeService } from "@core/services/spinner-facade.service";
@@ -47,12 +48,18 @@ export class ContactPageComponent implements OnInit, OnDestroy {
   private loadData(): void {
     this.spinner.show();
     this.contactData$ = this.projectData.getContactData();
-    this.contactData$.subscribe({
+    this.contactData$.pipe(take(1)).subscribe({
       next: (data) => {
         this.buildForm(data);
-        this.spinner.hide();
+        // Hide spinner after data is loaded
+        setTimeout(() => {
+          this.spinner.hide();
+        }, 100);
       },
-      error: () => this.spinner.hide(),
+      error: () => {
+        // Hide spinner on error
+        this.spinner.hide();
+      }
     });
   }
 

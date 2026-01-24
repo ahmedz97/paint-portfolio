@@ -2,16 +2,18 @@ import { Component, HostListener, OnInit, OnDestroy } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { BannerComponent } from "@shared/components/banner/banner.component";
 import { Observable, Subscription } from "rxjs";
-import { map } from "rxjs/operators";
+import { map, finalize, take } from "rxjs/operators";
 import { TranslateService } from "@ngx-translate/core";
 import { Gallery } from "@shared/models/project-data.model";
 import { ProjectDataService } from "@core/services/project-data.service";
+import { SpinnerFacadeService } from "@core/services/spinner-facade.service";
 import { CarouselModule, OwlOptions } from "ngx-owl-carousel-o";
+import { SectionTitleComponent } from "@shared/components/section-title/section-title.component";
 
 @Component({
   selector: "app-gallery-page",
   standalone: true,
-  imports: [CommonModule, BannerComponent, CarouselModule],
+  imports: [CommonModule, BannerComponent, CarouselModule, SectionTitleComponent],
   templateUrl: "./gallery-page.component.html",
   styleUrl: "./gallery-page.component.scss",
 })
@@ -21,7 +23,8 @@ export class GalleryPageComponent implements OnInit, OnDestroy {
 
   constructor(
     private projectData: ProjectDataService,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private spinner: SpinnerFacadeService
   ) {}
 
   ngOnInit(): void {
@@ -34,6 +37,7 @@ export class GalleryPageComponent implements OnInit, OnDestroy {
   }
 
   private loadData(): void {
+    this.spinner.show();
     this.galleryData$ = this.projectData.getGalleryData().pipe(
       map((data) => {
         // Initialize all images and pagination
@@ -44,6 +48,18 @@ export class GalleryPageComponent implements OnInit, OnDestroy {
         return data;
       })
     );
+    this.galleryData$.pipe(take(1)).subscribe({
+      next: () => {
+        // Hide spinner after data is loaded
+        setTimeout(() => {
+          this.spinner.hide();
+        }, 100);
+      },
+      error: () => {
+        // Hide spinner on error
+        this.spinner.hide();
+      }
+    });
   }
 
   ngOnDestroy(): void {

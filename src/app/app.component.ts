@@ -1,10 +1,12 @@
-import { Component, OnInit, PLATFORM_ID, inject } from '@angular/core';
+import { Component, OnInit, OnDestroy, PLATFORM_ID, inject } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { SpinnerFacadeService } from './core/services/spinner-facade.service';
 import { ProjectDataService } from './core/services/project-data.service';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { filter, Subscription } from 'rxjs';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -13,25 +15,32 @@ import { NgxSpinnerModule } from 'ngx-spinner';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly translate = inject(TranslateService);
   private readonly spinner = inject(SpinnerFacadeService);
   private readonly projectData = inject(ProjectDataService);
+  private readonly router = inject(Router);
+  private routerSubscription?: Subscription;
 
   ngOnInit(): void {
     // Set default language
     this.translate.setDefaultLang('en');
     
-    // Load project data on init
+    // Show spinner initially - first page will take over
     this.spinner.show();
-    this.projectData.getProjectData().subscribe({
+    
+    // Preload project data
+    this.projectData.getProjectData().pipe(
+      take(1)
+    ).subscribe({
       next: () => {
-        this.spinner.hide();
+        // Data preloaded - pages will handle their own spinners
       },
       error: (err) => {
         console.error('Error loading project data:', err);
-        this.spinner.hide();
+        // Hide spinner on error
+        setTimeout(() => this.spinner.hide(), 100);
       }
     });
 
@@ -53,6 +62,20 @@ export class AppComponent implements OnInit {
         localStorage.setItem(STORAGE_KEY, lang);
       }
     }
+
+    // Track router navigation - show spinner on navigation start
+    this.routerSubscription = this.router.events
+      .pipe(
+        filter(event => event instanceof NavigationStart)
+      )
+      .subscribe(() => {
+        // Show spinner when navigation starts
+        this.spinner.show();
+      });
+  }
+
+  ngOnDestroy(): void {
+    this.routerSubscription?.unsubscribe();
   }
 }
 

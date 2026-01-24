@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectDataService } from '@core/services/project-data.service';
 import { Observable, Subscription } from 'rxjs';
+import { finalize, take } from 'rxjs/operators';
 import { TranslateService } from '@ngx-translate/core';
 import { Vr } from '@shared/models/project-data.model';
 import { SpinnerFacadeService } from '@core/services/spinner-facade.service';
@@ -36,9 +37,17 @@ export class VrPageComponent implements OnInit, OnDestroy {
   private loadData(): void {
     this.spinner.show();
     this.vrData$ = this.projectData.getVrData();
-    this.vrData$.subscribe({
-      next: () => this.spinner.hide(),
-      error: () => this.spinner.hide(),
+    this.vrData$.pipe(take(1)).subscribe({
+      next: () => {
+        // Hide spinner after data is loaded
+        setTimeout(() => {
+          this.spinner.hide();
+        }, 100);
+      },
+      error: () => {
+        // Hide spinner on error
+        this.spinner.hide();
+      }
     });
   }
 

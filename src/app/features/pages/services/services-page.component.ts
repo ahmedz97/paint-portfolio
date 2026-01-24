@@ -2,6 +2,7 @@ import { Home, ProjectData } from "./../../../shared/models/project-data.model";
 import { Component, OnInit, AfterViewInit, OnDestroy } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { Observable, Subscription } from "rxjs";
+import { finalize, take } from "rxjs/operators";
 import { TranslateService } from "@ngx-translate/core";
 import { Service } from "@shared/models/project-data.model";
 import { ProjectDataService } from "@core/services/project-data.service";
@@ -45,17 +46,45 @@ export class ServicesPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
   private loadData(): void {
     this.spinner.show();
+    
+    let serviceLoaded = false;
+    let homeLoaded = false;
+    
+    const checkAndHide = () => {
+      if (serviceLoaded && homeLoaded) {
+        setTimeout(() => {
+          this.spinner.hide();
+        }, 100);
+      }
+    };
+    
     this.serviceData$ = this.projectData.getServicesData();
     this.homeData$ = this.projectData.getHomeData();
-    this.serviceData$.subscribe({
+    
+    this.serviceData$.pipe(take(1)).subscribe({
       next: (data) => {
         // Set default active tab to first tab
         if (data.work && data.work.tabs && data.work.tabs.length > 0) {
           this.activeTab = data.work.tabs[0].id;
         }
-        this.spinner.hide();
+        serviceLoaded = true;
+        checkAndHide();
       },
-      error: () => this.spinner.hide(),
+      error: () => {
+        serviceLoaded = true;
+        checkAndHide();
+      }
+    });
+    
+    this.homeData$.pipe(take(1)).subscribe({
+      next: () => {
+        homeLoaded = true;
+        checkAndHide();
+      },
+      error: () => {
+        homeLoaded = true;
+        checkAndHide();
+      }
     });
   }
 

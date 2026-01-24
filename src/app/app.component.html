@@ -1,2 +1,12 @@
 <router-outlet></router-outlet>
-<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
+
+<ngx-spinner 
+  name="global"
+  bdColor="rgba(0,0,0,0.9)"
+  size="large"
+  color="#fff"
+  [fullScreen]="true">
+  <span class="loader"></span>
+  <!-- type="ball-scale-multiple" -->
+  <p class="text-white text-center mt-3 fs-5 fw-bold textMainColor fst-italic">Loading...</p>
+</ngx-spinner>

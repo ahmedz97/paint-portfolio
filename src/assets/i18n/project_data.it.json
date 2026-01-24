@@ -768,97 +768,310 @@
     "description": "Il contenuto della pagina della galleria sarà implementato qui.",
     "images": [
       {
-        "src": "/assets/images/bt1.jpg"
+        "src": "/assets/main-image/AdobeStock_282665805-scaled.jpeg"
       },
       {
-        "src": "/assets/images/bt2.jpg"
+        "src": "/assets/main-image/istockphoto-1141385268-612x612.jpg"
       },
       {
-        "src": "/assets/images/bt3.jpg"
+        "src": "/assets/main-image/istockphoto-1061852176-612x612.jpg"
       },
       {
-        "src": "/assets/images/bt4.jpg"
+        "src": "/assets/main-image/Gypsum-Board-Banner.webp"
       },
       {
-        "src": "/assets/images/post-1.jpg"
+        "src": "/assets/main-image/vr-image.webp"
       },
       {
-        "src": "/assets/images/post-2.jpg"
+        "src": "/assets/main-image/water-resistant-gypsum-sheet-rounded-edge-802020273-ac1jc025.avif"
       },
       {
-        "src": "/assets/images/work-5.jpg"
+        "src": "/assets/main-image/Roof/1.webp"
       },
       {
-        "src": "/assets/images/bt1.jpg"
+        "src": "/assets/main-image/Roof/2.webp"
       },
       {
-        "src": "/assets/images/bt2.jpg"
+        "src": "/assets/main-image/Roof/3.webp"
       },
       {
-        "src": "/assets/images/bt3.jpg"
+        "src": "/assets/main-image/Roof/4.webp"
       },
       {
-        "src": "/assets/images/bt4.jpg"
+        "src": "/assets/main-image/Roof/5.webp"
       },
       {
-        "src": "/assets/images/post-1.jpg"
+        "src": "/assets/main-image/Roof/6.webp"
       },
       {
-        "src": "/assets/images/post-2.jpg"
+        "src": "/assets/main-image/Roof/7.webp"
       },
       {
-        "src": "/assets/images/work-5.jpg"
+        "src": "/assets/main-image/Roof/8.webp"
       },
       {
-        "src": "/assets/images/bt1.jpg"
+        "src": "/assets/main-image/Roof/9.webp"
       },
       {
-        "src": "/assets/images/bt2.jpg"
+        "src": "/assets/main-image/Roof/10.webp"
       },
       {
-        "src": "/assets/images/bt3.jpg"
+        "src": "/assets/main-image/Roof/11.webp"
       },
       {
-        "src": "/assets/images/bt4.jpg"
+        "src": "/assets/main-image/Roof/12.webp"
       },
       {
-        "src": "/assets/images/post-1.jpg"
+        "src": "/assets/main-image/Roof/13.webp"
       },
       {
-        "src": "/assets/images/post-2.jpg"
+        "src": "/assets/main-image/Roof/14.webp"
       },
       {
-        "src": "/assets/images/work-5.jpg"
+        "src": "/assets/main-image/Roof/15.webp"
       },
       {
-        "src": "/assets/images/bt1.jpg"
+        "src": "/assets/main-image/Roof/16.webp"
       },
       {
-        "src": "/assets/images/bt2.jpg"
+        "src": "/assets/main-image/Roof/17.webp"
       },
       {
-        "src": "/assets/images/bt3.jpg"
+        "src": "/assets/main-image/Roof/18.webp"
       },
       {
-        "src": "/assets/images/bt4.jpg"
+        "src": "/assets/main-image/Roof/19.webp"
       },
       {
-        "src": "/assets/images/post-1.jpg"
+        "src": "/assets/main-image/Roof/20.webp"
       },
       {
-        "src": "/assets/images/post-2.jpg"
+        "src": "/assets/main-image/Roof/21.webp"
       },
       {
-        "src": "/assets/images/work-5.jpg"
+        "src": "/assets/main-image/Roof/22.webp"
       },
       {
-        "src": "/assets/images/bt1.jpg"
+        "src": "/assets/main-image/Roof/23.webp"
       },
       {
-        "src": "/assets/images/bt2.jpg"
+        "src": "/assets/main-image/Roof/24.webp"
       },
       {
-        "src": "/assets/images/bt3.jpg"
+        "src": "/assets/main-image/Roof/25.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/26.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/27.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/28.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/29.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/30.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/31.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/32.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/33.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/34.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/1.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/2.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/3.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/4.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/5.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/6.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/7.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/8.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/9.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/10.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/11.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/12.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/13.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/14.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/15.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/16.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/17.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/18.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/19.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/20.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/21.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/22.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/23.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/24.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/25.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/26.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/1.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/2.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/3.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/4.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/5.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/6.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/7.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/8.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/9.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/10.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/11.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/12.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/13.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/14.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/15.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/16.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/17.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/18.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/19.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/1.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/2.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/3.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/4.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/5.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/6.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/7.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/8.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/9.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/10.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/11.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/12.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/13.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/14.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/15.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/16.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/17.webp"
       }
     ],
     "pagination": {

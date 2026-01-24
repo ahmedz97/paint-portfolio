@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { Observable, Subscription } from "rxjs";
+import { finalize, take } from "rxjs/operators";
 import { TranslateService } from "@ngx-translate/core";
 import { ProjectDataService } from "@core/services/project-data.service";
 import { SpinnerFacadeService } from "@core/services/spinner-facade.service";
@@ -47,11 +48,41 @@ export class AboutPageComponent implements OnInit, OnDestroy {
 
   private loadData(): void {
     this.spinner.show();
+    
+    let aboutLoaded = false;
+    let homeLoaded = false;
+    
+    const checkAndHide = () => {
+      if (aboutLoaded && homeLoaded) {
+        setTimeout(() => {
+          this.spinner.hide();
+        }, 100);
+      }
+    };
+    
     this.aboutData$ = this.projectData.getAboutData();
     this.homeData$ = this.projectData.getHomeData();
-    this.aboutData$.subscribe({
-      next: () => this.spinner.hide(),
-      error: () => this.spinner.hide(),
+    
+    this.aboutData$.pipe(take(1)).subscribe({
+      next: () => {
+        aboutLoaded = true;
+        checkAndHide();
+      },
+      error: () => {
+        aboutLoaded = true;
+        checkAndHide();
+      }
+    });
+    
+    this.homeData$.pipe(take(1)).subscribe({
+      next: () => {
+        homeLoaded = true;
+        checkAndHide();
+      },
+      error: () => {
+        homeLoaded = true;
+        checkAndHide();
+      }
     });
   }
 

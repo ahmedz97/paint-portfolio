@@ -12,7 +12,7 @@ import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
 import { Observable, Subscription } from "rxjs";
-import { take } from "rxjs/operators";
+import { take, finalize } from "rxjs/operators";
 import { TranslateService } from "@ngx-translate/core";
 import { ProjectDataService } from "@core/services/project-data.service";
 import { SpinnerFacadeService } from "@core/services/spinner-facade.service";
@@ -73,11 +73,19 @@ export class HomePageComponent implements OnInit, AfterViewInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
+    this.loadData();
+
+    // Reload data when language changes
+    this.langSubscription = this.translate.onLangChange.subscribe(() => {
+      this.loadData();
+    });
+  }
+
+  private loadData(): void {
     this.spinner.show();
     this.homeData$ = this.projectData.getHomeData();
-    this.homeData$.subscribe({
+    this.homeData$.pipe(take(1)).subscribe({
       next: () => {
-        this.spinner.hide();
         // Ensure activeFilter is set to 'all' on initial load
         this.activeFilter = 'all';
         this.cdr.markForCheck();
@@ -87,27 +95,15 @@ export class HomePageComponent implements OnInit, AfterViewInit, OnDestroy {
             this.initMixitup();
           }, 300);
         }
-      },
-      error: () => this.spinner.hide(),
-    });
-
-    // Reload data when language changes
-    this.langSubscription = this.translate.onLangChange.subscribe(() => {
-      this.spinner.show();
-      this.homeData$ = this.projectData.getHomeData();
-      this.homeData$.subscribe({
-        next: () => {
+        // Hide spinner after data is loaded
+        setTimeout(() => {
           this.spinner.hide();
-          this.activeFilter = 'all';
-          this.cdr.markForCheck();
-          if (this.viewInitialized) {
-            setTimeout(() => {
-              this.initMixitup();
-            }, 300);
-          }
-        },
-        error: () => this.spinner.hide(),
-      });
+        }, 100);
+      },
+      error: () => {
+        // Hide spinner on error
+        this.spinner.hide();
+      }
     });
   }
 
