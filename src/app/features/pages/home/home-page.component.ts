@@ -11,8 +11,9 @@ import {
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
-import { Observable } from "rxjs";
+import { Observable, Subscription } from "rxjs";
 import { take } from "rxjs/operators";
+import { TranslateService } from "@ngx-translate/core";
 import { ProjectDataService } from "@core/services/project-data.service";
 import { SpinnerFacadeService } from "@core/services/spinner-facade.service";
 import { Home } from "@shared/models/project-data.model";
@@ -45,14 +46,17 @@ export class HomePageComponent implements OnInit, AfterViewInit, OnDestroy {
   portfolioContainer?: ElementRef;
   homeData$?: Observable<Home>;
   showVideo = false;
+  activeFilter: string = 'all';
   private mixitupInstance: any;
   private viewInitialized = false;
+  private langSubscription?: Subscription;
   customOptions: OwlOptions = {
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
     loop: true,
     autoplay: true,
-    smartSpeed: 2000,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
+    smartSpeed: 1000,
     dots: false,
     nav: false,
     items: 1,
@@ -64,7 +68,8 @@ export class HomePageComponent implements OnInit, AfterViewInit, OnDestroy {
     private projectData: ProjectDataService,
     private spinner: SpinnerFacadeService,
     private sanitizer: DomSanitizer,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private translate: TranslateService
   ) {}
 
   ngOnInit(): void {
@@ -73,6 +78,8 @@ export class HomePageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.homeData$.subscribe({
       next: () => {
         this.spinner.hide();
+        // Ensure activeFilter is set to 'all' on initial load
+        this.activeFilter = 'all';
         this.cdr.markForCheck();
         // Initialize mixitup if view is already initialized
         if (this.viewInitialized) {
@@ -82,6 +89,25 @@ export class HomePageComponent implements OnInit, AfterViewInit, OnDestroy {
         }
       },
       error: () => this.spinner.hide(),
+    });
+
+    // Reload data when language changes
+    this.langSubscription = this.translate.onLangChange.subscribe(() => {
+      this.spinner.show();
+      this.homeData$ = this.projectData.getHomeData();
+      this.homeData$.subscribe({
+        next: () => {
+          this.spinner.hide();
+          this.activeFilter = 'all';
+          this.cdr.markForCheck();
+          if (this.viewInitialized) {
+            setTimeout(() => {
+              this.initMixitup();
+            }, 300);
+          }
+        },
+        error: () => this.spinner.hide(),
+      });
     });
   }
 
@@ -133,12 +159,22 @@ export class HomePageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   getSafeVideoUrl(url: string): SafeResourceUrl {
-    // Ensure URL has proper YouTube embed parameters
+    // Ensure URL has proper YouTube embed parameters with autoplay and mute
     let embedUrl = url;
     if (url.includes("youtube.com/embed/")) {
       // Add parameters to reduce tracking and improve compatibility
       const separator = url.includes("?") ? "&" : "?";
-      embedUrl = `${url}${separator}rel=0&modestbranding=1&playsinline=1`;
+      // Check if autoplay and mute are already in URL
+      const hasAutoplay = url.includes("autoplay=");
+      const hasMute = url.includes("mute=");
+      let params = "rel=0&modestbranding=1&playsinline=1";
+      if (!hasAutoplay) {
+        params += "&autoplay=1";
+      }
+      if (!hasMute) {
+        params += "&mute=1";
+      }
+      embedUrl = `${url}${separator}${params}`;
     }
     return this.sanitizer.bypassSecurityTrustResourceUrl(embedUrl);
   }
@@ -146,6 +182,7 @@ export class HomePageComponent implements OnInit, AfterViewInit, OnDestroy {
   ngOnDestroy(): void {
     // Clean up mixitup instance
     this.destroyMixitup();
+    this.langSubscription?.unsubscribe();
   }
 
   // destroy mixitup instance
@@ -154,5 +191,29 @@ export class HomePageComponent implements OnInit, AfterViewInit, OnDestroy {
       this.mixitupInstance.destroy();
     }
     this.mixitupInstance = null;
+  }
+
+  // Get filtered portfolio items
+  getFilteredItems(items: any[]): any[] {
+    if (this.activeFilter === 'all') {
+      // Show only first 6 items when 'all' filter is active
+      return items.slice(0, 6);
+    }
+    // For other filters, return all items (mixitup will handle filtering)
+    return items;
+  }
+
+  // Handle filter change
+  onFilterClick(filter: string): void {
+    this.activeFilter = filter;
+    this.cdr.markForCheck();
+    // Reinitialize mixitup after filter change to ensure all items are available
+    setTimeout(() => {
+      this.initMixitup();
+      // Trigger mixitup filter if not 'all'
+      if (filter !== 'all' && this.mixitupInstance) {
+        this.mixitupInstance.filter(filter);
+      }
+    }, 150);
   }
 }

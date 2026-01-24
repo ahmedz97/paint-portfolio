@@ -177,8 +177,8 @@ export interface Home {
 
 export interface FooterContact {
   icon: string;
-  text: string;
-  link: string;
+  text: string[];
+  link?: string;
 }
 
 export interface Footer {
@@ -237,9 +237,13 @@ export interface About {
 
 export interface Office {
   name: string;
-  address: string;
-  email: string;
-  phone: string;
+  addresses?: string[];
+  emails?: string[];
+  phones?: string[];
+  // Legacy support for single values
+  address?: string;
+  email?: string;
+  phone?: string;
 }
 
 export interface ContactFormField {
@@ -307,11 +311,10 @@ export interface Service {
 // vr page
 export interface Vr {
   banner: Banner;
-  description: string;
-  images: { src: string; class: string }[];
-  pagination: {
-    pages: number[];
-  };
+  title: string;
+  description: Array<{ text: string; details: string }>;
+  image: string;
+  videos: { src: string; class: string;caption: string }[];
 }
 
 export interface ProjectData {

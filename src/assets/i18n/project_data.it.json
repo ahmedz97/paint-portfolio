@@ -1,0 +1,1035 @@
+{
+  "SITE": {
+    "name": "Portfolio",
+    "title": "Portfolio - Home",
+    "logo": "/assets/main-image/main-logo.webp",
+    "footerLogo": "/assets/main-image/main-logo.webp",
+    "copyright": "@ copyright 2026 di",
+    "copyrightLink": "soluzione perfetta 4u",
+    "languages": [
+      {
+        "value": "it",
+        "label": "Italiano"
+      },
+      {
+        "value": "en",
+        "label": "English"
+      }
+    ],
+    "navigation": [
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "chi siamo",
+        "href": "/about"
+      },
+      {
+        "text": "servizi",
+        "href": "/services"
+      },
+      {
+        "text": "VR",
+        "href": "/vr"
+      },
+
+      {
+        "text": "Galleria",
+        "href": "/gallery"
+      },
+      {
+        "text": "contatti",
+        "href": "/contact"
+      }
+    ]
+  },
+  "HOME": {
+    "skitter_slider": {
+      "slides": [
+        {
+          "image": "https://images.pexels.com/photos/7031608/pexels-photo-7031608.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "benvenuti in GMB S.R.I.S.",
+          "title": "GBM S.R.l.S <br/>Costruzione ristorazione",
+          "buttonText": "Scopri di più",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "benvenuti in GMB S.R.I.S.",
+          "title": "Servizi Esperti per Cartongesso",
+          "buttonText": "Scopri di più",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "benvenuti in GMB S.R.I.S.",
+          "title": "Lavori di Qualità in Cartongesso",
+          "buttonText": "Scopri di più",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "benvenuti in GMB S.R.I.S.",
+          "title": "Soluzioni Moderne in Cartongesso",
+          "buttonText": "Scopri di più",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "benvenuti in GMB S.R.I.S.",
+          "title": "Servizi di Installazione Premium",
+          "buttonText": "Scopri di più",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "benvenuti in GMB S.R.I.S.",
+          "title": "Design Personalizzato in Cartongesso",
+          "buttonText": "Scopri di più",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "benvenuti in GMB S.R.I.S.",
+          "title": "Esperti nell'Installazione di Cartongesso",
+          "buttonText": "Scopri di più",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1643389/pexels-photo-1643389.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "benvenuti in GMB S.R.I.S.",
+          "title": "GBM S.R.l.S <br/>Costruzione ristorazione",
+          "buttonText": "Scopri di più",
+          "buttonLink": "/about"
+        }
+      ]
+    },
+    "serviceSolution": {
+      "title": "CREIAMO LE SOLUZIONI PERFETTE",
+      "titleDot": ".",
+      "description": "Ci impegniamo a fornire ai nostri clienti un servizio eccezionale offrendo ai nostri dipendenti la migliore formazione.",
+      "services": [
+        {
+          "number": "01",
+          "icon": "fa fa-brush",
+          "title": "lavori in cartongesso",
+          "link": ""
+        },
+        {
+          "number": "02",
+          "icon": "fa fa-paint-roller",
+          "title": "pittura interna ed esterna",
+          "link": ""
+        },
+        {
+          "number": "03",
+          "icon": "fa fa-palette",
+          "title": "progettazione interna ed esterna",
+          "link": ""
+        },
+        {
+          "number": "04",
+          "icon": "fa fa-spray-can",
+          "title": "stucco bianco e intonaco",
+          "link": ""
+        }
+      ]
+    },
+    "downtown": {
+      "images": [
+        {
+          "src": "https://images.pexels.com/photos/5570222/pexels-photo-5570222.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "class": "w-100 rounded-3"
+        },
+        {
+          "src": "https://images.pexels.com/photos/12715594/pexels-photo-12715594.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "class": "w-100 rounded-3 topImg"
+        }
+      ],
+      "title": "Siamo la migliore agenzia nella stampa su cartongesso",
+      "titleDot": ".",
+      "subtitle": "Ci impegniamo a fornire servizi eccezionali di stampa su cartongesso e soluzioni di design innovative che superano le vostre aspettative.",
+      "description": "Specializzati in stampa di alta qualità su cartongesso, soluzioni di design personalizzate e servizi di finitura professionali. Trasformiamo la vostra visione creativa in materiali stampati straordinari con precisione ed eccellenza.",
+      "features": [
+        "Servizi premium di stampa su cartongesso.",
+        "Design personalizzato e soluzioni creative.",
+        "Finitura e installazione professionali."
+      ],
+      "since": {
+        "text": "dal 2008"
+      },
+      "buttonText": "vedi i nostri servizi",
+      "buttonLink": "/services"
+    },
+    "video": {
+      "title": "vivici in diretta",
+      "titleDot": ".",
+      "videoUrl": "../assets/main-image/vr-videos/Apartment_Color_Transformation_VR.mp4",
+      "heading": "stampa esperta su cartongesso e soluzioni di design creative",
+      "buttonText": "leggi di più",
+      "buttonLink": "/about"
+    },
+    "portfolio": {
+      "title": "",
+      "titleDot": "",
+      "filters": [
+        {
+          "text": "Tutti",
+          "filter": "all"
+        },
+        {
+          "text": "tetto",
+          "filter": ".roof"
+        },
+        {
+          "text": "pareti",
+          "filter": ".walls"
+        },
+        {
+          "text": "aree aperte",
+          "filter": ".open-areas"
+        },
+        {
+          "text": "biblioteche",
+          "filter": ".libraries"
+        }
+      ],
+      "items": [
+        {
+          "image": "../../../assets/main-image/Roof/1.webp",
+          "classes": "roof"
+        },
+        {
+          "image": "../../../assets/main-image/Roof/4.webp",
+          "classes": "roof"
+        },
+        {
+          "image": "../../../assets/main-image/Roof/8.webp",
+          "classes": "roof"
+        },
+        {
+          "image": "../../../assets/main-image/Roof/24.webp",
+          "classes": "roof"
+        },
+        {
+          "image": "../../../assets/main-image/Roof/32.webp",
+          "classes": "roof"
+        },
+        {
+          "image": "../../../assets/main-image/Roof/34.webp",
+          "classes": "roof"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/1.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/5.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/11.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/19.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/22.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/24.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/25.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/26.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Open Areas/1.webp",
+          "classes": "open-areas"
+        },
+        {
+          "image": "../../../assets/main-image/Open Areas/10.webp",
+          "classes": "open-areas"
+        },
+        {
+          "image": "../../../assets/main-image/Open Areas/14.webp",
+          "classes": "open-areas"
+        },
+        {
+          "image": "../../../assets/main-image/Open Areas/17.webp",
+          "classes": "open-areas"
+        },
+        {
+          "image": "../../../assets/main-image/Libraries/1.webp",
+          "classes": "libraries"
+        },
+        {
+          "image": "../../../assets/main-image/Libraries/2.webp",
+          "classes": "libraries"
+        },
+        {
+          "image": "../../../assets/main-image/Libraries/3.webp",
+          "classes": "libraries"
+        },
+        {
+          "image": "../../../assets/main-image/Libraries/14.webp",
+          "classes": "libraries"
+        },
+        {
+          "image": "../../../assets/main-image/Libraries/15.webp",
+          "classes": "libraries"
+        }
+      ],
+      "pagination": {
+        "pages": [1, 2, 3]
+      }
+    },
+    "counter": {
+      "stats": [
+        {
+          "value": 5489,
+          "label": "progetti completati",
+          "speed": 5000
+        },
+        {
+          "value": 480,
+          "label": "clienti attivi",
+          "speed": 5000
+        },
+        {
+          "value": 626,
+          "label": "tazze di caffè",
+          "speed": 5000
+        },
+        {
+          "value": 9711,
+          "label": "clienti soddisfatti",
+          "speed": 5000
+        }
+      ],
+      "commitment": {
+        "title": "CI IMPEGNIAMO A CONSEGNARE PROGETTI DI ALTA QUALITÀ.",
+        "features": [
+          {
+            "number": "01",
+            "title": "LIBERTÀ DI DESIGN TOTALE PER TUTTI",
+            "subtitle": "CARATTERISTICHE PRINCIPALI"
+          },
+          {
+            "number": "02",
+            "title": "REGOLE BASE PER GESTIRE UN'AGENZIA WEB",
+            "subtitle": "CARATTERISTICHE PRINCIPALI"
+          }
+        ],
+        "trusted": {
+          "title": "CI FIDANO PIÙ DI\n6260 CLIENTI",
+          "titleDot": ".",
+          "description": "Ci sono molte varianti di passaggi di Lorem Ipsum disponibili, ma la maggior parte ha subito alterazioni in qualche forma, semplicemente testo libero iniettato dall'umorismo o randomizzato.",
+          "image": "/assets/images/team/t2.jpg",
+          "features": [
+            "Nsectetur cing elit.",
+            "Suspe ndisse suscipit sagittis leo.",
+            "Entum estibulum dignissim posuere.",
+            "If you are going to use a passage.",
+            "Lorem Ipsum on the tend to repeat."
+          ]
+        }
+      }
+    },
+    "team": {
+      "title": "incontra il team di esperti",
+      "titleDot": ".",
+      "bigBoss": {
+        "image": "../../../assets/main-image/Profile Pic.webp",
+        "name": "Edris Gamal",
+        "position": "Founder & CEO",
+        "socialLinks": [
+          {
+            "icon": "fa-brands fa-facebook-f",
+            "link": ""
+          },
+          {
+            "icon": "fa-brands fa-twitter",
+            "link": ""
+          },
+          {
+            "icon": "fa-brands fa-github",
+            "link": ""
+          }
+        ]
+      },
+      "members": [
+        {
+          "image": "/assets/images/team/man2.jpg",
+          "name": "rose ford",
+          "position": "co-fondatore",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/man1.jpg",
+          "name": "rose ford",
+          "position": "co-fondatore",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/t3.jpg",
+          "name": "rose ford",
+          "position": "co-fondatore",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/t4.jpg",
+          "name": "rose ford",
+          "position": "co-fondatore",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/t1.jpg",
+          "name": "rose ford",
+          "position": "co-fondatore",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/weman1.jpg",
+          "name": "rose ford",
+          "position": "co-fondatore",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        }
+      ]
+    },
+    "aboutCounter": {
+      "icon": "fa fa-mobile-screen-button",
+      "text": "le grandi cose negli affari non sono mai fatte da una sola persona.",
+      "highlightedText": "sono fatte da un team di persone."
+    },
+    "solutionBox": {
+      "title": "migliori soluzioni di agenzia di design",
+      "titleDot": ".",
+      "tabs": [
+        {
+          "id": "mission",
+          "label": "la nostra missione",
+          "content": "missione\nCi sono molte varianti di passaggi disponibili ma la maggior parte ha in qualche forma, per umorismo iniettato o parole che non sembrano nemmeno leggermente credibili. Ci sono molte varianti ma la maggior parte ha sofferto."
+        },
+        {
+          "id": "vision",
+          "label": "la nostra visione",
+          "content": "visione\nCi sono molte varianti di passaggi disponibili ma la maggior parte ha in qualche forma, per umorismo iniettato o parole che non sembrano nemmeno leggermente credibili. Ci sono molte varianti ma la maggior parte ha sofferto."
+        },
+        {
+          "id": "history",
+          "label": "la nostra storia",
+          "content": "storia\nCi sono molte varianti di passaggi disponibili ma la maggior parte ha in qualche forma, per umorismo iniettato o parole che non sembrano nemmeno leggermente credibili. Ci sono molte varianti ma la maggior parte ha sofferto."
+        }
+      ],
+      "description": "Ci sono molte varianti di passaggi disponibili ma la maggior parte ha in qualche forma, per umorismo iniettato o parole che non sembrano nemmeno leggermente credibili. Ci sono molte varianti ma la maggior parte ha sofferto.",
+      "image": "/assets/images/team/t1.jpg",
+      "features": [
+        "Nsectetur cing elit.",
+        "Suspe ndisse suscipit sagittis leo.",
+        "Entum estibulum dignissim posuere.",
+        "If you are going to use a passage.",
+        "Lorem Ipsum on the tend to repeat."
+      ]
+    },
+    "blogBox": {
+      "title": "ULTIME NOTIZIE E ARTICOLI",
+      "titleDot": ".",
+      "buttonText": "carica altri post",
+      "buttonLink": "",
+      "posts": [
+        {
+          "image": "/assets/images/bt3.jpg",
+          "date": "20 MAR",
+          "author": "Admin",
+          "comments": "2 commenti",
+          "title": "LEVERAGE AGILE PROVIDE TO A ROBUST",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "link": "#"
+        },
+        {
+          "image": "/assets/images/post-1.jpg",
+          "date": "20 MAR",
+          "author": "Admin",
+          "comments": "2 commenti",
+          "title": "LEVERAGE AGILE PROVIDE TO A ROBUST",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "link": "#"
+        },
+        {
+          "image": "/assets/images/post-2.jpg",
+          "date": "20 MAR",
+          "author": "Admin",
+          "comments": "2 commenti",
+          "title": "LEVERAGE AGILE PROVIDE TO A ROBUST",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "link": "#"
+        }
+      ]
+    }
+  },
+  "FOOTER": {
+    "logo": "/assets/main-image/main-logo.webp",
+    "description": "Benvenuti nella nostra agenzia di web design. Lorem ipsum semplicemente testo libero dolor posizionato amet cons cing elit.",
+    "socialLinks": [
+      {
+        "icon": "fa-brands fa-facebook-f",
+        "link": "https://www.facebook.com"
+      },
+      {
+        "icon": "fa-brands fa-twitter",
+        "link": "https://www.twitter.com"
+      },
+      {
+        "icon": "fa-brands fa-linkedin-in",
+        "link": "https://www.linkedin.com"
+      },
+      {
+        "icon": "fa-brands fa-youtube",
+        "link": "https://www.youtube.com"
+      }
+    ],
+    "explore": {
+      "title": "Esplora",
+      "links": [
+        {
+          "text": "chi siamo",
+          "link": "/about"
+        },
+        {
+          "text": "i nostri servizi",
+          "link": "/services"
+        },
+        {
+          "text": "i nostri progetti VR",
+          "link": "/vr"
+        },
+        {
+          "text": "la nostra galleria",
+          "link": "/gallery"
+        },
+        {
+          "text": "contattaci",
+          "link": "/contact"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "address": {
+        "icon": "fa fa-location-dot",
+        "text": ["Bologna, Italy","Bologna, Italy"],
+        "link": "https://www.google.com/maps/place/Bologna,+Metropolitan+City+of+Bologna,+Italy/@44.5012599,11.2492843,13z/data=!3m1!4b1!4m6!3m5!1s0x477fd498e951c40b:0xa2e17c015ba49441!8m2!3d44.4992289!4d11.2554781!16s%2Fg%2F11t5k610s2"
+      },
+      "phone": {
+        "icon": "fa fa-phone-volume",
+        "text": ["3889094888"],
+        "link": "tel:3889094888"
+      },
+      "email": {
+        "icon": "fa fa-envelope-circle-check",
+        "text": ["re86@gmail.com"],
+        "link": "mailto:re86@gmail.com"
+      }
+    },
+    "newsletter": {
+      "title": "La Nostra Newsletter",
+      "placeholder": "Inserisci Indirizzo",
+      "description": "Iscriviti alle nostre ultime notizie e articoli. Non ti invieremo spam."
+    },
+    "copyright": "@ copyright 2026 by",
+    "copyrightLink": " GBM S.R.I.S."
+  },
+  "ABOUT": {
+    "banner": {
+      "title": "Chi Siamo",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "chi siamo"
+      }
+    },
+    "businessDesc": {
+      "items": [
+        {
+          "image": "../../assets/main-image/istockphoto-1061852176-612x612.jpg",
+          "text": "Servizi professionali di stampa su cartongesso con finiture di alta qualità.",
+          "link": "/services"
+        },
+        {
+          "image": "../../assets/main-image/istockphoto-1141385268-612x612.jpg",
+          "text": "Soluzioni di design creative per progetti di stampa personalizzati.",
+          "link": "/services"
+        }
+      ]
+    },
+    "feedback": {
+      "title": "feedback dei clienti",
+      "titleDot": ".",
+      "testimonials": [
+        {
+          "image": "/assets/images/team/t3.jpg",
+          "name": "Marco Rossi",
+          "position": "Responsabile Design d'Interni",
+          "text": "Qualità eccezionale nella stampa su cartongesso! Il team ha consegnato risultati straordinari per il nostro progetto commerciale. La precisione nella stampa e l'attenzione ai dettagli hanno superato le nostre aspettative. Servizio altamente professionale dal design all'installazione."
+        },
+        {
+          "image": "/assets/images/team/t2.jpg",
+          "name": "Sarah Johnson",
+          "position": "Coordinatore Progetti",
+          "text": "Abbiamo lavorato con loro su più progetti e non deludono mai. Le loro soluzioni di design creative e la stampa di alta qualità su cartongesso hanno trasformato i nostri spazi. Il lavoro di finitura è impeccabile e sempre consegnato in tempo."
+        },
+        {
+          "image": "/assets/images/team/t1.jpg",
+          "name": "Alessandro Bianchi",
+          "position": "Proprietario Studio di Architettura",
+          "text": "Il miglior servizio di stampa su cartongesso che abbiamo mai provato. La loro competenza nel design personalizzato e nell'installazione professionale è ineguagliabile. Capiscono la nostra visione e la realizzano con precisione ed eccellenza. Altamente raccomandato!"
+        }
+      ]
+    }
+  },
+  "CONTACT": {
+    "banner": {
+      "title": "Contatto",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Contatto"
+      }
+    },
+    "offices": {
+      "title": "contattaci nei nostri uffici",
+      "titleDot": ".",
+      "items": [
+        {
+          "name": "Ufficio Principale",
+          "addresses": [
+            "Bologna, Italy"
+          ],
+          "emails": ["re86@gmail.com"],
+          "phones": ["3889094888"]
+        }
+        
+      ]
+    },
+    "map": {
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82408.9689093812!2d11.249284323332098!3d44.49922892246984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd498e951c40b%3A0xa2e17c015ba49441!2sBologna%2C%20Metropolitan%20City%20of%20Bologna%2C%20Italy!5e1!3m2!1sen!2seg!4v1769256749033!5m2!1sen!2seg"
+    },
+    "form": {
+      "title": "scrivici un messaggio",
+      "titleDot": ".",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "Il Tuo Nome",
+          "required": true
+        },
+        {
+          "type": "email",
+          "placeholder": "Indirizzo Email",
+          "required": true
+        },
+        {
+          "type": "tel",
+          "placeholder": "Numero di Telefono",
+          "required": false
+        },
+        {
+          "type": "text",
+          "placeholder": "Oggetto",
+          "required": false
+        },
+        {
+          "type": "textarea",
+          "placeholder": "Scrivi Messaggio",
+          "required": true
+        }
+      ],
+      "submitText": "invia messaggio"
+    }
+  },
+  "GALLERY": {
+    "banner": {
+      "title": "Galleria",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Galleria"
+      }
+    },
+    "description": "Il contenuto della pagina della galleria sarà implementato qui.",
+    "images": [
+      {
+        "src": "/assets/images/bt1.jpg"
+      },
+      {
+        "src": "/assets/images/bt2.jpg"
+      },
+      {
+        "src": "/assets/images/bt3.jpg"
+      },
+      {
+        "src": "/assets/images/bt4.jpg"
+      },
+      {
+        "src": "/assets/images/post-1.jpg"
+      },
+      {
+        "src": "/assets/images/post-2.jpg"
+      },
+      {
+        "src": "/assets/images/work-5.jpg"
+      },
+      {
+        "src": "/assets/images/bt1.jpg"
+      },
+      {
+        "src": "/assets/images/bt2.jpg"
+      },
+      {
+        "src": "/assets/images/bt3.jpg"
+      },
+      {
+        "src": "/assets/images/bt4.jpg"
+      },
+      {
+        "src": "/assets/images/post-1.jpg"
+      },
+      {
+        "src": "/assets/images/post-2.jpg"
+      },
+      {
+        "src": "/assets/images/work-5.jpg"
+      },
+      {
+        "src": "/assets/images/bt1.jpg"
+      },
+      {
+        "src": "/assets/images/bt2.jpg"
+      },
+      {
+        "src": "/assets/images/bt3.jpg"
+      },
+      {
+        "src": "/assets/images/bt4.jpg"
+      },
+      {
+        "src": "/assets/images/post-1.jpg"
+      },
+      {
+        "src": "/assets/images/post-2.jpg"
+      },
+      {
+        "src": "/assets/images/work-5.jpg"
+      },
+      {
+        "src": "/assets/images/bt1.jpg"
+      },
+      {
+        "src": "/assets/images/bt2.jpg"
+      },
+      {
+        "src": "/assets/images/bt3.jpg"
+      },
+      {
+        "src": "/assets/images/bt4.jpg"
+      },
+      {
+        "src": "/assets/images/post-1.jpg"
+      },
+      {
+        "src": "/assets/images/post-2.jpg"
+      },
+      {
+        "src": "/assets/images/work-5.jpg"
+      },
+      {
+        "src": "/assets/images/bt1.jpg"
+      },
+      {
+        "src": "/assets/images/bt2.jpg"
+      },
+      {
+        "src": "/assets/images/bt3.jpg"
+      }
+    ],
+    "pagination": {
+      "pages": [1, 2, 3]
+    }
+  },
+  "VR": {
+    "banner": {
+      "title": "VR",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "VR"
+      }
+    },
+      "title": "Progetta la Tua Casa Prima che Esista.",
+      "description": [
+      {
+        "text": "Spazio Vuoto",
+        "details":"Inizia da un appartamento vuoto in scala reale e comprendi lo spazio."
+      },
+      {
+        "text": "Layout delle Stanze",
+        "details":"Crea stanze, aggiungi pareti e definisci porte nella realtà virtuale."
+      },
+      {
+        "text": "Colori e Materiali",
+        "details":"Cambia colori e materiali istantaneamente e vedi i risultati in tempo reale."
+      },
+      {
+        "text": "Decorazione",
+        "details":"Aggiungi decorazioni e dettagli per definire il tuo stile."
+      },
+      {
+        "text": "Mobili",
+        "details":"Posiziona i mobili e vivi la tua casa finita prima di costruirla."
+      },
+      {
+        "text": "Chiusura",
+        "details":"Dalla visione alla realtà, prima della costruzione."
+      }
+    ],
+    "image": "../../assets/main-image/vr-image.webp",
+    "videos": [
+      {
+        "src": "/assets/main-image/vr-videos/Apartment_Color_Transformation_VR.mp4",
+        "class": "w-100 rounded-3",
+        "caption": "Apartment Color Transformation VR"
+      },
+      {
+        "src": "/assets/main-image/vr-videos/Cinematic_Apartment_Transformation_Begins.mp4",
+        "class": "w-100 rounded-3",
+        "caption": "Cinematic Apartment Transformation Begins"
+      },
+      {
+        "src": "/assets/main-image/vr-videos/Elegant_Modern_Interior_Decoration_Video.mp4",
+        "class": "w-100 rounded-3",
+        "caption": "Elegant Modern Interior Decoration Video"
+      },
+      {
+        "src": "/assets/main-image/vr-videos/Video_Appartamento_Arredato_Dalla_Visione_Alla_Realtà.mp4",
+        "class": "w-100 rounded-3",
+        "caption": "Video Appartamento Arredato Dalla Visione Alla Realtà"
+      },
+      {
+        "src": "/assets/main-image/vr-videos/Virtual_Reality_Room_Division_Animation.mp4",
+        "class": "w-100 rounded-3",
+        "caption": "Virtual Reality Room Division Animation"
+      }
+    ]
+  },
+  "SERVICES": {
+    "banner": {
+      "title": "Servizi",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Servizi"
+      }
+    },
+    "services": {
+      "items": [
+        {
+          "icon": "fa fa-paint-brush",
+          "title": "Stampa su Cartongesso",
+          "description": "Servizi di alta qualità su cartongesso con precisione e durata per progetti commerciali e residenziali.",
+          "link": "/services"
+        },
+        {
+          "icon": "fa fa-pencil-ruler",
+          "title": "Soluzioni di Design Personalizzate",
+          "description": "Servizi di design creativi e innovativi su misura per la tua visione, dal concetto ai materiali stampati finali con finiture di alta qualità.",
+          "link": "/services"
+        },
+        {
+          "icon": "fa fa-tools",
+          "title": "Installazione Professionale",
+          "description": "Servizi di installazione e finitura esperti che garantiscono un posizionamento perfetto e risultati duraturi con finiture di alta qualità.",
+          "link": "/services"
+        },
+        {
+          "icon": "fa fa-palette",
+          "title": "Finitura e Rivestimento",
+          "description": "Servizi premium di finitura e rivestimento protettivo per migliorare la durata e l'attrattiva visiva delle tue tavole stampate.",
+          "link": "/services"
+        }
+      ]
+    },
+    "work": {
+      "title": "LAVORIAMO CON LE INDUSTRIE",
+      "titleDot": ".",
+      "tabs": [
+        {
+          "id": "technology",
+          "label": "Lavori in Cartongesso",
+          "image": "../../assets/main-image/AdobeStock_282665805-scaled.jpeg",
+          "description": "Ci specializziamo nell'installazione di sistemi in cartongesso, offrendo soffitti personalizzati, soffitti sospesi, pannelli decorativi per pareti, sistemi di illuminazione nascosti e soluzioni acustiche e termiche.",
+          "highlightedText": "lavori in tutti i tipi di edifici.",
+          "features": [
+            "soffitti personalizzati.",
+            "soffitti sospesi.",
+            "pannelli decorativi per pareti.",
+            "sistemi di illuminazione nascosti.",
+            "soluzioni acustiche e termiche."
+          ]
+        },
+        {
+          "id": "support",
+          "label": "pittura interna ed esterna",
+          "image": "../../assets/main-image/istockphoto-1141385268-612x612.jpg",
+          "description": "Offriamo servizi completi di pittura interna ed esterna, garantendo finiture di alta qualità, superfici lisce, selezione colori, applicazione duratura e pulita, e protezione contro intemperie e raggi UV.",
+          "highlightedText": "diversi tipi di edifici.",
+          "features": [
+            "finiture di alta qualità.",
+            "superfici lisce.",
+            "selezione colori.",
+            "applicazione duratura e pulita.",
+            "protezione contro intemperie e raggi UV."
+          ]
+        },
+        {
+          "id": "install",
+          "label": "stucco bianco e intonaco",
+          "image": "../../assets/main-image/istockphoto-1061852176-612x612.jpg",
+          "description": "Forniamo servizi professionali di stucco bianco e intonaco, offrendo finiture ultra-lisce, base perfetta per pittura premium, adesione superiore a varie superfici, applicazione facile e rimozione pulita, ecologico e a basso contenuto di VOC, e protezione duratura e resistente.",
+          "highlightedText": "caratteristiche e vantaggi dello stucco bianco e intonaco.",
+          "features": [
+            "finiture ultra-lisce.",
+            "base perfetta per pittura premium.",
+            "adesione superiore a varie superfici.",
+            "applicazione facile e rimozione pulita.",
+            "ecologico e a basso contenuto di VOC.",
+            "protezione duratura e resistente."
+          ]
+        },
+        {
+          "id": "work",
+          "label": "dove lavoriamo",
+          "image": "../../assets/main-image/istockphoto-1141385268-612x612.jpg",
+          "description": "Siamo un'azienda leader nell'installazione di cartongesso, specializzata in soffitti personalizzati, soffitti sospesi, pannelli decorativi per pareti, sistemi di illuminazione nascosti e soluzioni acustiche e termiche.",
+          "highlightedText": "sono fatti da un team di persone che lavorano insieme.",
+          "features": [
+            "edifici residenziali.",
+            "aziende commerciali.",
+            "ospedali e centri medici.",
+            "istituzioni educative.",
+            "negozi e centri commerciali.",
+            "uffici e centri business.",
+            "ristoranti e caffè.",
+            "hotel e resort."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -5,32 +5,86 @@
   <!-- Offices Section -->
   <section class="py-5 my-5">
     <div class="container">
-      <h5 class="h1 text-uppercase">
+      <h5 class="h1 text-capitalize">
         {{ contactData.offices.title }}
         <span class="textMainColor">{{ contactData.offices.titleDot }}</span>
       </h5>
       <div class="row g-3 mt-4">
-        <div
-          class="col-xl-3 col-lg-4 col-md-6"
-          *ngFor="let office of contactData.offices.items"
-        >
+        <!-- Addresses -->
+        <div class="col-lg-4 col-md-6">
           <div class="contactContent p-4 rounded-3 shadow">
-            <h5 class="h3 text-uppercase">{{ office.name }}</h5>
-            <a [href]="'#'" class="text-secondary fs-5 d-block opacity-75">{{
-              office.address
-            }}</a>
-            <a
-              [href]="'mailto:' + office.email"
-              class="text-secondary fs-5 d-block opacity-75"
-              >{{ office.email }}</a
-            >
-            <a
-              [href]="getPhoneLink(office.phone)"
-              class="text-secondary fs-5 d-block opacity-75"
-              >{{ office.phone }}</a
-            >
+            <div class="d-flex align-items-center mb-3 fw-bold">
+              <i class="fa fa-map-marker-alt textMainColor me-2 fs-5"></i>
+              <h5 class="text-uppercase text-secondary mb-0">Addresses</h5>
+            </div>
+            <ng-container *ngFor="let office of contactData.offices.items">
+              <h6 class="text-uppercase text-secondary mb-1 small">
+                {{ office.name }}
+              </h6>
+              <ul class="list-unstyled">
+                <li *ngFor="let address of office.addresses || (office.address ? [office.address] : [])">
+                  <a
+                    [href]="getMapLink(address)"
+                    target="_blank"
+                    class="text-secondary fs-6 d-block opacity-75"
+                  >
+                    {{ address }}
+                  </a>
+                </li>
+              </ul>
+            </ng-container>
           </div>
         </div>
+
+        <!-- Emails -->
+        <div class="col-lg-4 col-md-6">
+          <div class="contactContent p-4 rounded-3 shadow">
+            <div class="d-flex align-items-center mb-3 fw-bold">
+              <i class="fa fa-envelope textMainColor me-2 fs-5"></i>
+              <h5 class="text-uppercase text-secondary mb-0">Emails</h5>
+            </div>
+            <ng-container *ngFor="let office of contactData.offices.items">
+              <h6 class="text-uppercase text-secondary mb-1 small">
+                {{ office.name }}
+              </h6>
+              <ul class="list-unstyled">
+                <li *ngFor="let email of office.emails || (office.email ? [office.email] : [])">
+                  <a
+                    [href]="'mailto:' + email"
+                    class="text-secondary fs-6 d-block opacity-75"
+                  >
+                    {{ email }}
+                  </a>
+                </li>
+              </ul>
+              
+            </ng-container>
+          </div>
+        </div>
+
+        <!-- Phones -->
+        <div class="col-lg-4 col-md-6">
+          <div class="contactContent p-4 rounded-3 shadow">
+            <div class="d-flex align-items-center mb-3 fw-bold">
+              <i class="fa fa-phone textMainColor me-2 fs-5"></i>
+              <h5 class="text-uppercase text-secondary mb-0">Phone Numbers</h5>
+            </div>
+            <ng-container *ngFor="let office of contactData.offices.items">
+              <h6 class="text-uppercase text-secondary mb-1 small">{{ office.name }}</h6>
+              <ul class="list-unstyled">
+                <li *ngFor="let phone of office.phones || (office.phone ? [office.phone] : [])">
+                  <a
+                    [href]="getPhoneLink(phone)"
+                    class="text-secondary fs-6 d-block opacity-75"
+                  >
+                    {{ phone }}
+                  </a>
+                </li>
+              </ul>
+            </ng-container>
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>
@@ -38,7 +92,7 @@
   <!-- Map Section -->
   <section *ngIf="contactData.map.iframe">
     <iframe
-      [src]="contactData.map.iframe"
+      [src]="getSafeMapUrl(contactData.map.iframe)"
       width="100%"
       height="450"
       style="border: 0"

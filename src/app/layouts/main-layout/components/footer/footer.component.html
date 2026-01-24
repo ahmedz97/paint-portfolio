@@ -14,10 +14,19 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-5 col-sm-6">
+      <div class="col-lg-2 col-md-5 col-sm-6">
         <div class="contactLink">
           <h4 class="mb-3 h4 fw-semibold">{{ footerData.explore.title }}</h4>
-          <div class="row">
+          <ul class="list-unstyled">
+            <li *ngFor="let link of footerData.explore.links">
+              <a [routerLink]="link.link.startsWith('#') ? null : link.link"
+                 [href]="link.link.startsWith('#') ? link.link : null"
+                 class="text-capitalize d-block mt-2">
+                {{ link.text }}
+              </a>
+            </li>
+          </ul>
+          <!-- <div class="row">
             <div class="col-6" *ngFor="let column of getExploreColumns()">
               <a *ngFor="let link of column" 
                  [routerLink]="link.link.startsWith('#') ? null : link.link"
@@ -26,24 +35,32 @@
                 {{ link.text }}
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
-      <div class="col-lg-2 col-md-5 col-sm-6">
+      <div class="col-lg-3 col-md-5 col-sm-6">
         <div class="contactLink">
           <h4 class="mb-3 h4 fw-semibold">{{ footerData.contact.title }}</h4>
-          <a [href]="footerData.contact.address.link" class="text-capitalize d-block mt-2 d-flex">
-            <i [class]="footerData.contact.address.icon + ' textMainColor me-2 pt-1'"></i>
-            <span>{{ footerData.contact.address.text }}</span>
-          </a>
-          <a [href]="footerData.contact.phone.link" class="text-capitalize d-block mt-2 d-flex">
-            <i [class]="footerData.contact.phone.icon + ' textMainColor me-2 pt-1'"></i>
-            <span>{{ footerData.contact.phone.text }}</span>
-          </a>
-          <a [href]="footerData.contact.email.link" class="text-capitalize d-block mt-2 d-flex">
-            <i [class]="footerData.contact.email.icon + ' textMainColor me-2 pt-1'"></i>
-            <span>{{ footerData.contact.email.text }}</span>
-          </a>
+          <ng-container *ngFor="let address of footerData.contact.address.text">
+            <a [href]="footerData.contact.address.link" target="_blank" class=" d-block mt-2 d-flex">
+              <i [class]="footerData.contact.address.icon + ' textMainColor me-2 pt-1'"></i>
+              <span>{{ address }}</span>
+            </a>
+          </ng-container>
+
+          <ng-container *ngFor="let phone of footerData.contact.phone.text">
+            <a [href]="footerData.contact.phone.link" target="_blank" class=" d-block mt-2 d-flex">
+              <i [class]="footerData.contact.phone.icon + ' textMainColor me-2 pt-1'"></i>
+              <span>{{ phone }}</span>
+            </a>
+          </ng-container>
+          
+          <ng-container *ngFor="let email of footerData.contact.email.text">
+            <a [href]="footerData.contact.email.link" target="_blank" class=" d-block mt-2 d-flex">
+              <i [class]="footerData.contact.email.icon + ' textMainColor me-2 pt-1'"></i>
+              <span>{{ email }}</span>
+            </a>
+          </ng-container>
         </div>
       </div>
       <div class="col-lg-3 col-md-5">

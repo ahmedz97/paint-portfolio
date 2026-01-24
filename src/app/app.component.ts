@@ -35,12 +35,23 @@ export class AppComponent implements OnInit {
       }
     });
 
-    // Set language from browser if available
+    // Set language from localStorage, browser, or default
     if (isPlatformBrowser(this.platformId)) {
-      const browserLang = navigator.language.split('-')[0];
+      const STORAGE_KEY = 'selectedLanguage';
       const supportedLangs = ['en', 'it'];
-      const lang = supportedLangs.includes(browserLang) ? browserLang : 'en';
-      this.translate.use(lang);
+      
+      // Try to load from localStorage first
+      const savedLang = localStorage.getItem(STORAGE_KEY);
+      if (savedLang && supportedLangs.includes(savedLang)) {
+        this.translate.use(savedLang);
+      } else {
+        // Fallback to browser language
+        const browserLang = navigator.language.split('-')[0];
+        const lang = supportedLangs.includes(browserLang) ? browserLang : 'en';
+        this.translate.use(lang);
+        // Save to localStorage
+        localStorage.setItem(STORAGE_KEY, lang);
+      }
     }
   }
 }

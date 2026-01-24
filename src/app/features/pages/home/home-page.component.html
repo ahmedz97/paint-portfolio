@@ -61,7 +61,9 @@
               *ngFor="let img of homeData.downtown.images"
               [src]="img.src"
               [class]="img.class"
-              alt=""
+              loading="lazy"
+              alt="gypsum board printing and creative design solutions"
+              title="gypsum board printing and creative design solutions"
             />
           </div>
         </div>
@@ -129,7 +131,7 @@
             </div>
           </div>
           <h6
-            class="text-capitalize h1 ps-5"
+            class="text-capitalize text-center h3 px-5"
             [innerHTML]="homeData.video.heading | nl2br"
           ></h6>
           <a
@@ -146,7 +148,7 @@
   </section>
 
   <!-- Portfolio Section -->
-  <section id="portfolio" class="py-5">
+  <section id="portfolio" class="py-5 my-5">
     <div class="container">
       <div class="d-flex justify-content-center align-items-center flex-wrap">
         <!-- <app-section-title
@@ -159,9 +161,10 @@
           <button
             *ngFor="let filter of homeData.portfolio.filters"
             type="button"
-            class="border-0 bg-transparent position-relative text-capitalize mx-1 pe-3 ps-0 mb-1 pb-2"
+            class="border-0 fw-bold bg-transparent position-relative text-capitalize mx-1 pe-3 ps-0 mb-1 pb-2"
             [attr.data-filter]="filter.filter"
-            [class.mixitup-control-active]="filter.filter === 'all'"
+            [class.mixitup-control-active]="activeFilter === filter.filter"
+            (click)="onFilterClick(filter.filter)"
           >
             {{ filter.text }}
           </button>
@@ -169,7 +172,8 @@
       </div>
       <div class="row gy-4" #portfolioContainer>
         <div
-          *ngFor="let item of homeData.portfolio.items"
+        routerLink="/gallery"
+          *ngFor="let item of getFilteredItems(homeData.portfolio.items)"
           [class]="'col-lg-4 col-md-6 mix ' + item.classes"
         >
           <div class="item position-relative overflow-hidden">
@@ -177,16 +181,18 @@
               <img
                 [src]="item.image"
                 class="w-100 cPointer"
-                [alt]="item.title"
+                [alt]="item.classes"
+                [title]="item.classes"
+                loading="lazy"
               />
-              <figcaption class="bg-dark text-white p-3 rounded-3">
+              <!-- <figcaption class="bg-dark text-white p-3 rounded-3">
                 <h2 class="fs-6 text-uppercase position-relative">
                   {{ item.category }}
                 </h2>
                 <a [routerLink]="item.link || '#'">
                   <h3 class="h4 text-uppercase text-white">{{ item.title }}</h3>
                 </a>
-              </figcaption>
+              </figcaption> -->
             </figure>
           </div>
         </div>
@@ -211,20 +217,36 @@
         <div
           class="row g-3 align-items-center bg-light p-3 rounded-3 border mb-4 flex-sm-row flex-column"
         >
-          <h3 class="text-center text-uppercase textMainColor">Big Boss</h3>
+          <!-- <h3 class="text-center text-uppercase textMainColor">Big Boss</h3> -->
           <div class="col-lg-4 col-md-6">
             <figure class="mb-0 mx-auto">
               <img
-                src="/assets/images/team/man1.jpg"
+                [src]="homeData.team.bigBoss.image"
                 class="w-100 rounded-3"
-                alt=""
+                [alt]="homeData.team.bigBoss.name"
+                [title]="homeData.team.bigBoss.name"
               />
             </figure>
           </div>
           <div class="col-lg-8 col-md-6">
             <figcaption class="text-center text-md-start">
-              <h2 class="h4 text-uppercase mb-0">rose ford</h2>
-              <p class="text-secondary text-uppercase">co-founder</p>
+              <h2 class="h4 text-uppercase mb-0">{{ homeData.team.bigBoss.name }}</h2>
+              <p class="text-secondary text-uppercase">{{ homeData.team.bigBoss.position }}</p>
+
+              <ul class="list-unstyled d-flex  mt-2">
+                <!-- <li class="socialIcon shadow me-2" *ngFor="let social of homeData.team.bigBoss.socialLinks">
+                  <i [class]="social.icon"></i>
+                </li> -->
+                <a
+                  *ngFor="let social of homeData.team.bigBoss.socialLinks"
+                  target="_blank"
+                  [href]="social.link || '#'"
+                >
+                  <li class="socialIcon shadow me-2">
+                    <i [class]="social.icon"></i>
+                  </li>
+                </a>
+              </ul>
             </figcaption>
           </div>
         </div>

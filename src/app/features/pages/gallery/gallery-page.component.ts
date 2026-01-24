@@ -1,8 +1,9 @@
-import { Component, HostListener, OnInit } from "@angular/core";
+import { Component, HostListener, OnInit, OnDestroy } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { BannerComponent } from "@shared/components/banner/banner.component";
-import { Observable } from "rxjs";
+import { Observable, Subscription } from "rxjs";
 import { map } from "rxjs/operators";
+import { TranslateService } from "@ngx-translate/core";
 import { Gallery } from "@shared/models/project-data.model";
 import { ProjectDataService } from "@core/services/project-data.service";
 import { CarouselModule, OwlOptions } from "ngx-owl-carousel-o";
@@ -14,21 +15,39 @@ import { CarouselModule, OwlOptions } from "ngx-owl-carousel-o";
   templateUrl: "./gallery-page.component.html",
   styleUrl: "./gallery-page.component.scss",
 })
-export class GalleryPageComponent implements OnInit {
+export class GalleryPageComponent implements OnInit, OnDestroy {
   galleryData$?: Observable<Gallery>;
+  private langSubscription?: Subscription;
 
-  constructor(private projectData: ProjectDataService) {}
+  constructor(
+    private projectData: ProjectDataService,
+    private translate: TranslateService
+  ) {}
 
   ngOnInit(): void {
+    this.loadData();
+
+    // Reload data when language changes
+    this.langSubscription = this.translate.onLangChange.subscribe(() => {
+      this.loadData();
+    });
+  }
+
+  private loadData(): void {
     this.galleryData$ = this.projectData.getGalleryData().pipe(
       map((data) => {
         // Initialize all images and pagination
         this.allImages = data.images.map((img) => img.src);
         this.totalPages = Math.ceil(this.allImages.length / this.itemsPerPage);
+        this.currentPage = 1;
         this.loadPageImages();
         return data;
       })
     );
+  }
+
+  ngOnDestroy(): void {
+    this.langSubscription?.unsubscribe();
   }
 
   customOptions: OwlOptions = {

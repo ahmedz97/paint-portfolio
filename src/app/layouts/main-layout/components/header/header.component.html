@@ -34,10 +34,11 @@
         <select
           name="language"
           class="form-control cPointer lang text-capitalize pb-1"
+          [value]="currentLang"
           (change)="onLanguageChange($event)"
         >
-          <option value="" selected hidden>select language</option>
-          <option *ngFor="let lang of siteData?.languages" [value]="lang.value">
+          <option value="" hidden>select language</option>
+          <option *ngFor="let lang of siteData?.languages" [value]="lang.value" [selected]="lang.value === currentLang">
             {{ lang.label }}
           </option>
         </select>
@@ -112,12 +113,14 @@
             <select
               name="language"
               class="form-control cPointer lang text-capitalize pb-1"
+              [value]="currentLang"
               (change)="onLanguageChange($event)"
             >
-              <option value="" selected hidden></option>
+              <option value="" hidden></option>
               <option
                 *ngFor="let lang of siteData?.languages"
                 [value]="lang.value"
+                [selected]="lang.value === currentLang"
               >
                 {{ lang.label }}
               </option>
