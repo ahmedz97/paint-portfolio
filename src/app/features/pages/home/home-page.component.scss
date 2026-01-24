@@ -49,8 +49,24 @@
         padding: 15px 40px;
         font-size: 1.1rem;
       }
+
+      @media (max-width: 767px) {
+
+        h1 {
+          font-size: 2.5rem !important;
+        }
+      }
+
+      @media (max-width: 568px) {
+
+        h1 {
+          font-size: 1.5rem !important;
+        }
+      }
     }
+
   }
+
   // .curve-top,
   // .curve-bottom,
   // .line-top {
@@ -96,17 +112,19 @@
   }
 }
 
-.bigBoss{
-  .row{
+.bigBoss {
+  .row {
     max-width: 800px;
     margin: 0 auto;
   }
-  figure{
+
+  figure {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    img{
+
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;

@@ -296,23 +296,23 @@
     "counter": {
       "stats": [
         {
-          "value": 5489,
-          "label": "projects completed",
+          "value": 54,
+          "label": "Projects Completed",
           "speed": 5000
         },
         {
-          "value": 480,
-          "label": "active clients",
+          "value": 80,
+          "label": "Active Clients",
           "speed": 5000
         },
         {
-          "value": 626,
-          "label": "cups of coffee",
+          "value": 14,
+          "label": "Years of Experience",
           "speed": 5000
         },
         {
-          "value": 9711,
-          "label": "happy clients",
+          "value": 100,
+          "label": "% Satisfaction",
           "speed": 5000
         }
       ],

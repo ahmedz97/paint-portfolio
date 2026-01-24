@@ -1,20 +1,35 @@
 .nav-link {
-  font-size: 18px!important;
-  font-weight: 600!important;
-  text-transform: capitalize!important;
-  transition: all .8s!important;
-  color: #fff!important;
-  &:hover { color: var(--mainColor,#D8AF5E)!important; }
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  text-transform: capitalize !important;
+  transition: all .8s !important;
+  color: #fff !important;
+
+  &:hover {
+    color: var(--mainColor, #D8AF5E) !important;
+  }
 }
 
 select {
-  background: transparent!important;
-  border: none!important;
-  outline: none!important;
-  box-shadow: none!important;
-  color: #fff!important;
+  background: transparent !important;
+  border: 1ps solid #aaa !important;
+  text-align: center !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
+
   option {
-    color: #000!important;
-    background: #fff!important;
+    color: #000 !important;
+    background: #fff !important;
+    cursor: pointer !important;
+
+    &:hover {
+      background: var(--mainColor, #D8AF5E) !important;
+      color: #fff !important;
+    }
+  }
+
+  &:focus {
+    border-color: var(--mainColor, #D8AF5E) !important;
   }
 }

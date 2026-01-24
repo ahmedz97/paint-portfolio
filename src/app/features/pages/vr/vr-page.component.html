@@ -27,8 +27,8 @@
         </div>
 
         <div class="row g-3 my-5">
-          <div class="col-lg-6" *ngFor="let video of vrData.videos; let i = index">
-            <div class="video-wrapper position-relative">
+          <div class="col-lg-6 " *ngFor="let video of vrData.videos; let i = index">
+            <div class="video-wrapper overflow-hidden ">
               <video 
                 [src]="video.src" 
                 class="w-100 rounded-3"
@@ -39,6 +39,7 @@
                 loop
                 (mouseenter)="onVideoHover(i, videoElement)"
                 (mouseleave)="onVideoLeave(videoElement)"
+                (click)="openVideoLightbox(i)"
               ></video>
               <p 
                 class="video-caption text-capitalize ms-4 mb-2 fw-bold textMainColor fs-6 fs-sm-5"
@@ -50,5 +51,60 @@
 
       </div>
     </section>
+
+    <!-- Video Lightbox Modal -->
+    @if (isVideoLightboxOpen && vrData.videos) {
+    <div class="video-lightbox-overlay pt-5" (click)="closeVideoLightbox()">
+      <div class="video-lightbox-container pt-5" (click)="$event.stopPropagation()">
+        <!-- Close Button -->
+        <button
+          class="video-lightbox-close rounded-circle flexCenter cPointer"
+          (click)="closeVideoLightbox()"
+          aria-label="Close"
+        >
+          <i class="fa fa-times"></i>
+        </button>
+
+        <!-- Navigation Buttons -->
+        @if (currentVideoIndex > 0) {
+        <button
+          class="video-lightbox-nav video-lightbox-prev rounded-circle flexCenter cPointer"
+          (click)="prevVideo()"
+          aria-label="Previous"
+        >
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        } @if (currentVideoIndex < vrData.videos.length - 1) {
+        <button
+          class="video-lightbox-nav video-lightbox-next rounded-circle flexCenter cPointer"
+          (click)="nextVideo()"
+          aria-label="Next"
+        >
+          <i class="fa fa-chevron-right"></i>
+        </button>
+        }
+
+        <!-- Video Container -->
+        <div class="video-lightbox-video-container">
+          <video
+            [src]="currentVideo?.src"
+            class="video-lightbox-video rounded-3"
+            #lightboxVideoElement
+            controls
+            autoplay
+            playsinline
+          ></video>
+          <p class="video-lightbox-caption text-capitalize mt-3 fw-bold text-white text-center">
+            {{currentVideo?.caption}}
+          </p>
+        </div>
+
+        <!-- Video Counter -->
+        <div class="video-lightbox-counter">
+          {{ currentVideoIndex + 1 }} / {{ vrData.videos.length }}
+        </div>
+      </div>
+    </div>
+    }
 
   </div>
