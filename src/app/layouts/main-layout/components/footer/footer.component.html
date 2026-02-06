@@ -1,0 +1,90 @@
+<footer *ngIf="footerData">
+  <div class="container">
+    <div class="row gy-4 justify-content-between py-5">
+      <div class="col-lg-3 col-md-5">
+        <div>
+          <div class="contactLogo">
+            <img [src]="footerData.logo" class="w-50" alt="linoor logo">
+          </div>
+          <p class="my-3">{{ footerData.description }}</p>
+          <div class="social-links d-flex justify-content-between">
+            <a *ngFor="let social of footerData.socialLinks" [href]="social.link" class="socialIcon contactIcon">
+              <i [class]="social.icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-5 col-sm-6">
+        <div class="contactLink">
+          <h4 class="mb-3 h4 fw-semibold">{{ footerData.explore.title }}</h4>
+          <ul class="list-unstyled">
+            <li *ngFor="let link of footerData.explore.links">
+              <a [routerLink]="link.link.startsWith('#') ? null : link.link"
+                 [href]="link.link.startsWith('#') ? link.link : null"
+                 class="text-capitalize d-block mt-2">
+                {{ link.text }}
+              </a>
+            </li>
+          </ul>
+          <!-- <div class="row">
+            <div class="col-6" *ngFor="let column of getExploreColumns()">
+              <a *ngFor="let link of column" 
+                 [routerLink]="link.link.startsWith('#') ? null : link.link"
+                 [href]="link.link.startsWith('#') ? link.link : null"
+                 class="text-capitalize d-block mt-2">
+                {{ link.text }}
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-5 col-sm-6">
+        <div class="contactLink">
+          <h4 class="mb-3 h4 fw-semibold">{{ footerData.contact.title }}</h4>
+          <ng-container *ngFor="let address of footerData.contact.address.text">
+            <a [href]="footerData.contact.address.link" target="_blank" class=" d-block mt-2 d-flex">
+              <i [class]="footerData.contact.address.icon + ' textMainColor me-2 pt-1'"></i>
+              <span>{{ address }}</span>
+            </a>
+          </ng-container>
+
+          <ng-container *ngFor="let phone of footerData.contact.phone.text">
+            <a [href]="footerData.contact.phone.link" target="_blank" class=" d-block mt-2 d-flex">
+              <i [class]="footerData.contact.phone.icon + ' textMainColor me-2 pt-1'"></i>
+              <span>{{ phone }}</span>
+            </a>
+          </ng-container>
+          
+          <ng-container *ngFor="let email of footerData.contact.email.text">
+            <a [href]="footerData.contact.email.link" target="_blank" class=" d-block mt-2 d-flex">
+              <i [class]="footerData.contact.email.icon + ' textMainColor me-2 pt-1'"></i>
+              <span>{{ email }}</span>
+            </a>
+          </ng-container>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-5">
+        <div>
+          <h3 class="mb-3 h4 fw-semibold">{{ footerData.newsletter.title }}</h3>
+          <form class="d-flex bg-dark rounded-3 overflow-hidden mb-4">
+            <input
+              type="email"
+              class="px-3 w-75 rounded-end-0 bg-transparent text-white py-3 border-0"
+              [placeholder]="footerData.newsletter.placeholder">
+            <button type="submit" class="btn px-3 w-25 rounded-start-0">
+              <span class="socialIcon contactIcon">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </button>
+          </form>
+          <p>{{ footerData.newsletter.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="copyRight pt-5 text-center mt-5 fs-5">
+      {{ footerData.copyright }}
+      <a [href]="footerData.copyrightLink" class="textMainColor fw-bold">{{ footerData.copyrightLink }}</a>
+    </div>
+  </div>
+</footer>
+

@@ -1,0 +1,1248 @@
+{
+  "SITE": {
+    "name": "Portfolio",
+    "title": "Portfolio - Home",
+    "logo": "/assets/main-image/main-logo.webp",
+    "footerLogo": "/assets/main-image/main-logo.webp",
+    "copyright": "@ copyright 2026 by",
+    "copyrightLink": "perfect soluation 4u",
+    "languages": [
+      {
+        "value": "it",
+        "label": "Italiano"
+      },
+      {
+        "value": "en",
+        "label": "English"
+      }
+    ],
+    "navigation": [
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "about us",
+        "href": "/about"
+      },
+      {
+        "text": "services",
+        "href": "/services"
+      },
+      {
+        "text": "VR",
+        "href": "/vr"
+      },
+
+      {
+        "text": "Gallery",
+        "href": "/gallery"
+      },
+      {
+        "text": "contacts",
+        "href": "/contact"
+      }
+    ]
+  },
+  "HOME": {
+    "skitter_slider": {
+      "slides": [
+        {
+          "image": "https://images.pexels.com/photos/7031608/pexels-photo-7031608.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "welcome to GMB S.R.I.S.",
+          "title": "GBM S.R.l.S <br/>Costruzione ristorazione",
+          "buttonText": "Discover more",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "welcome to GMB S.R.I.S.",
+          "title": "Expert Gypsum Board Services",
+          "buttonText": "Discover more",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "welcome to GMB S.R.I.S.",
+          "title": "Quality Gypsum Board Works",
+          "buttonText": "Discover more",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "welcome to GMB S.R.I.S.",
+          "title": "Modern Gypsum Board Solutions",
+          "buttonText": "Discover more",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "welcome to GMB S.R.I.S.",
+          "title": "Premium Installation Services",
+          "buttonText": "Discover more",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "welcome to GMB S.R.I.S.",
+          "title": "Custom Gypsum Board Design",
+          "buttonText": "Discover more",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "welcome to GMB S.R.I.S.",
+          "title": "Gypsum Board Installation Experts",
+          "buttonText": "Discover more",
+          "buttonLink": "/about"
+        },
+        {
+          "image": "https://images.pexels.com/photos/1643389/pexels-photo-1643389.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "welcomeText": "welcome to GMB S.R.I.S.",
+          "title": "GBM S.R.l.S <br/>Costruzione ristorazione",
+          "buttonText": "Discover more",
+          "buttonLink": "/about"
+        }
+      ]
+    },
+    "serviceSolution": {
+      "title": "WE SHAPE THE PERFECT SOLUTIONS",
+      "titleDot": ".",
+      "description": "We are committed to provid our customers with exceptional service while offering our employees the best training.",
+      "services": [
+        {
+          "number": "01",
+          "icon": "fa fa-brush",
+          "title": "gypsum board works",
+          "link": ""
+        },
+        {
+          "number": "02",
+          "icon": "fa fa-paint-roller",
+          "title": "interior & exterior painting",
+          "link": ""
+        },
+        {
+          "number": "03",
+          "icon": "fa fa-palette",
+          "title": "interior & exterior designing",
+          "link": ""
+        },
+        {
+          "number": "04",
+          "icon": "fa fa-spray-can",
+          "title": "white putty & plastering",
+          "link": ""
+        }
+      ]
+    },
+    "downtown": {
+      "images": [
+        {
+          "src": "https://images.pexels.com/photos/5570222/pexels-photo-5570222.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "class": "w-100 rounded-3"
+        },
+        {
+          "src": "https://images.pexels.com/photos/12715594/pexels-photo-12715594.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+          "class": "w-100 rounded-3 topImg"
+        }
+      ],
+      "title": "We're the best agency in gypsum board printing",
+      "titleDot": ".",
+      "subtitle": "We are committed to delivering exceptional gypsum board printing services and innovative design solutions that exceed your expectations.",
+      "description": "Specializing in high-quality gypsum board printing, custom design solutions, and professional finishing services. We transform your creative vision into stunning printed materials with precision and excellence.",
+      "features": [
+        "Premium gypsum board printing services.",
+        "Custom design and creative solutions.",
+        "Professional finishing and installation."
+      ],
+      "since": {
+        "text": "since 2008"
+      },
+      "buttonText": "view our services",
+      "buttonLink": "/services"
+    },
+    "video": {
+      "title": "experience us live",
+      "titleDot": ".",
+      "videoUrl": "../assets/main-image/vr-videos/Apartment_Color_Transformation_VR.mp4",
+      "heading": "expert gyps board printing and creative design solutions",
+      "buttonText": "read more",
+      "buttonLink": "/about"
+    },
+    "portfolio": {
+      "title": "",
+      "titleDot": "",
+      "filters": [
+        {
+          "text": "All",
+          "filter": "all"
+        },
+        {
+          "text": "roof",
+          "filter": ".roof"
+        },
+        {
+          "text": "walls",
+          "filter": ".walls"
+        },
+        {
+          "text": "open Areas",
+          "filter": ".open-areas"
+        },
+        {
+          "text": "libraries",
+          "filter": ".libraries"
+        }
+      ],
+      "items": [
+        {
+          "image": "../../../assets/main-image/Roof/1.webp",
+          "classes": "roof"
+        },
+        {
+          "image": "../../../assets/main-image/Roof/4.webp",
+          "classes": "roof"
+        },
+        {
+          "image": "../../../assets/main-image/Roof/8.webp",
+          "classes": "roof"
+        },
+        {
+          "image": "../../../assets/main-image/Roof/24.webp",
+          "classes": "roof"
+        },
+        {
+          "image": "../../../assets/main-image/Roof/32.webp",
+          "classes": "roof"
+        },
+        {
+          "image": "../../../assets/main-image/Roof/34.webp",
+          "classes": "roof"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/1.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/5.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/11.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/19.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/22.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/24.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/25.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Walls/26.webp",
+          "classes": "walls"
+        },
+        {
+          "image": "../../../assets/main-image/Open Areas/1.webp",
+          "classes": "open-areas"
+        },
+        {
+          "image": "../../../assets/main-image/Open Areas/10.webp",
+          "classes": "open-areas"
+        },
+        {
+          "image": "../../../assets/main-image/Open Areas/14.webp",
+          "classes": "open-areas"
+        },
+        {
+          "image": "../../../assets/main-image/Open Areas/17.webp",
+          "classes": "open-areas"
+        },
+        {
+          "image": "../../../assets/main-image/Libraries/1.webp",
+          "classes": "libraries"
+        },
+        {
+          "image": "../../../assets/main-image/Libraries/2.webp",
+          "classes": "libraries"
+        },
+        {
+          "image": "../../../assets/main-image/Libraries/3.webp",
+          "classes": "libraries"
+        },
+        {
+          "image": "../../../assets/main-image/Libraries/14.webp",
+          "classes": "libraries"
+        },
+        {
+          "image": "../../../assets/main-image/Libraries/15.webp",
+          "classes": "libraries"
+        }
+      ],
+      "pagination": {
+        "pages": [1, 2, 3]
+      }
+    },
+    "counter": {
+      "stats": [
+        {
+          "value": 54,
+          "label": "Projects Completed",
+          "speed": 5000
+        },
+        {
+          "value": 80,
+          "label": "Active Clients",
+          "speed": 5000
+        },
+        {
+          "value": 14,
+          "label": "Years of Experience",
+          "speed": 5000
+        },
+        {
+          "value": 100,
+          "label": "% Satisfaction",
+          "speed": 5000
+        }
+      ],
+      "commitment": {
+        "title": "WE'RE COMMITTED TO DELIVER HIGH QUALITY PROJECTS .",
+        "features": [
+          {
+            "number": "01",
+            "title": "TOTAL DESIGN FREEDOM FOR EVERYONE",
+            "subtitle": "CORE FEATURES"
+          },
+          {
+            "number": "02",
+            "title": "BASIC RULES OF RUNNING WEB AGENCY",
+            "subtitle": "CORE FEATURES"
+          }
+        ],
+        "trusted": {
+          "title": "WE'RE TRUSTED BY MORE\nTHAN 6260 CLIENTS",
+          "titleDot": ".",
+          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, simply free text by injected humour, or randomised.",
+          "image": "/assets/images/team/t2.jpg",
+          "features": [
+            "Nsectetur cing elit.",
+            "Suspe ndisse suscipit sagittis leo.",
+            "Entum estibulum dignissim posuere.",
+            "If you are going to use a passage.",
+            "Lorem Ipsum on the tend to repeat."
+          ]
+        }
+      }
+    },
+    "team": {
+      "title": "meet the expert team",
+      "titleDot": ".",
+      "bigBoss": {
+        "image": "../../../assets/main-image/Profile Pic.webp",
+        "name": "Edris Gamal",
+        "position": "Founder & CEO",
+        "socialLinks": [
+          {
+            "icon": "fa-brands fa-facebook-f",
+            "link": ""
+          },
+          {
+            "icon": "fa-brands fa-twitter",
+            "link": ""
+          },
+          {
+            "icon": "fa-brands fa-github",
+            "link": ""
+          }
+        ]
+      },
+      "members": [
+        {
+          "image": "/assets/images/team/man2.jpg",
+          "name": "rose ford",
+          "position": "co-founder",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/man1.jpg",
+          "name": "rose ford",
+          "position": "co-founder",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/t3.jpg",
+          "name": "rose ford",
+          "position": "co-founder",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/t4.jpg",
+          "name": "rose ford",
+          "position": "co-founder",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/t1.jpg",
+          "name": "rose ford",
+          "position": "co-founder",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "image": "/assets/images/team/weman1.jpg",
+          "name": "rose ford",
+          "position": "co-founder",
+          "socialLinks": [
+            {
+              "icon": "fa-brands fa-facebook-f",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-twitter",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-github",
+              "link": ""
+            },
+            {
+              "icon": "fa-brands fa-instagram",
+              "link": ""
+            }
+          ]
+        }
+      ]
+    },
+    "aboutCounter": {
+      "icon": "fa fa-mobile-screen-button",
+      "text": "great things in business are never done by one person.",
+      "highlightedText": "they're done by a team of people."
+    },
+    "solutionBox": {
+      "title": "best design agency soluations",
+      "titleDot": ".",
+      "tabs": [
+        {
+          "id": "mission",
+          "label": "our mission",
+          "content": "mission\nThere are many variations of passages of avaialable but the majority have in some form, by injected humou or words which don't look even slightly believable. There are many variations of but the majority have suffered."
+        },
+        {
+          "id": "vision",
+          "label": "our vision",
+          "content": "vision\nThere are many variations of passages of avaialable but the majority have in some form, by injected humou or words which don't look even slightly believable. There are many variations of but the majority have suffered."
+        },
+        {
+          "id": "history",
+          "label": "our history",
+          "content": "history\nThere are many variations of passages of avaialable but the majority have in some form, by injected humou or words which don't look even slightly believable. There are many variations of but the majority have suffered."
+        }
+      ],
+      "description": "There are many variations of passages of avaialable but the majority have in some form, by injected humou or words which don't look even slightly believable. There are many variations of but the majority have suffered.",
+      "image": "/assets/images/team/t1.jpg",
+      "features": [
+        "Nsectetur cing elit.",
+        "Suspe ndisse suscipit sagittis leo.",
+        "Entum estibulum dignissim posuere.",
+        "If you are going to use a passage.",
+        "Lorem Ipsum on the tend to repeat."
+      ]
+    },
+    "blogBox": {
+      "title": "LATEST NEWS & ARTICLES",
+      "titleDot": ".",
+      "buttonText": "load more posts",
+      "buttonLink": "",
+      "posts": [
+        {
+          "image": "/assets/images/bt3.jpg",
+          "date": "20 MAR",
+          "author": "Admin",
+          "comments": "2 comments",
+          "title": "LEVERAGE AGILE PROVIDE TO A ROBUST",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "link": "#"
+        },
+        {
+          "image": "/assets/images/post-1.jpg",
+          "date": "20 MAR",
+          "author": "Admin",
+          "comments": "2 comments",
+          "title": "LEVERAGE AGILE PROVIDE TO A ROBUST",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "link": "#"
+        },
+        {
+          "image": "/assets/images/post-2.jpg",
+          "date": "20 MAR",
+          "author": "Admin",
+          "comments": "2 comments",
+          "title": "LEVERAGE AGILE PROVIDE TO A ROBUST",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
+          "link": "#"
+        }
+      ]
+    }
+  },
+  "FOOTER": {
+    "logo": "/assets/main-image/main-logo.webp",
+    "description": "Welcome to our web design agency. Lorem ipsum simply free text dolor sited amet cons cing elit.",
+    "socialLinks": [
+      {
+        "icon": "fa-brands fa-facebook-f",
+        "link": "https://www.facebook.com"
+      },
+      {
+        "icon": "fa-brands fa-twitter",
+        "link": "https://www.twitter.com"
+      },
+      {
+        "icon": "fa-brands fa-linkedin-in",
+        "link": "https://www.linkedin.com"
+      },
+      {
+        "icon": "fa-brands fa-youtube",
+        "link": "https://www.youtube.com"
+      }
+    ],
+    "explore": {
+      "title": "Explor",
+      "links": [
+        {
+          "text": "about us",
+          "link": "/about"
+        },
+        {
+          "text": "our services",
+          "link": "/services"
+        },
+        {
+          "text": "our VR projects",
+          "link": "/vr"
+        },
+        {
+          "text": "our gallery",
+          "link": "/gallery"
+        },
+        {
+          "text": "contact us",
+          "link": "/contact"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "address": {
+        "icon": "fa fa-location-dot",
+        "text": ["Bologna, Italy","Bologna, Italy"],
+        "link": "https://www.google.com/maps/place/Bologna,+Metropolitan+City+of+Bologna,+Italy/@44.5012599,11.2492843,13z/data=!3m1!4b1!4m6!3m5!1s0x477fd498e951c40b:0xa2e17c015ba49441!8m2!3d44.4992289!4d11.2554781!16s%2Fg%2F11t5k610s2"
+      },
+      "phone": {
+        "icon": "fa fa-phone-volume",
+        "text": ["3889094888"],
+        "link": "tel:3889094888"
+      },
+      "email": {
+        "icon": "fa fa-envelope-circle-check",
+        "text": ["re86@gmail.com"],
+        "link": "mailto:re86@gmail.com"
+      }
+    },
+    "newsletter": {
+      "title": "Our Newsletter",
+      "placeholder": "Enter Address",
+      "description": "Sign up for our latest news & articles. We won't give you spam mails."
+    },
+    "copyright": "@ copyright 2026 by",
+    "copyrightLink": " GBM S.R.I.S."
+  },
+  "ABOUT": {
+    "banner": {
+      "title": "About Us",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "about us"
+      }
+    },
+    "businessDesc": {
+      "items": [
+        {
+          "image": "../../assets/main-image/istockphoto-1061852176-612x612.jpg",
+          "text": "Professional gypsum board printing services with high-quality finishes.",
+          "link": "/services"
+        },
+        {
+          "image": "../../assets/main-image/istockphoto-1141385268-612x612.jpg",
+          "text": "Creative design solutions for custom printing projects.",
+          "link": "/services"
+        }
+      ]
+    },
+    "feedback": {
+      "title": "customer feedback",
+      "titleDot": ".",
+      "testimonials": [
+        {
+          "image": "/assets/images/team/t3.jpg",
+          "name": "Marco Rossi",
+          "position": "Interior Design Manager",
+          "text": "Outstanding gypsum board printing quality! The team delivered exceptional results for our commercial project. The precision in printing and attention to detail exceeded our expectations. Highly professional service from design to installation."
+        },
+        {
+          "image": "/assets/images/team/t2.jpg",
+          "name": "Sarah Johnson",
+          "position": "Project Coordinator",
+          "text": "We've worked with them on multiple projects and they never disappoint. Their creative design solutions and high-quality gypsum board printing have transformed our spaces. The finishing work is impeccable and always delivered on time."
+        },
+        {
+          "image": "/assets/images/team/t1.jpg",
+          "name": "Alessandro Bianchi",
+          "position": "Architecture Firm Owner",
+          "text": "The best gypsum board printing service we've experienced. Their expertise in custom design and professional installation is unmatched. They understand our vision and bring it to life with precision and excellence. Highly recommended!"
+        }
+      ]
+    }
+  },
+  "CONTACT": {
+    "banner": {
+      "title": "Contact",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Contact"
+      }
+    },
+    "offices": {
+      "title": "contact with us at our offices",
+      "titleDot": ".",
+      "items": [
+        {
+          "name": "Main Office",
+          "addresses": [
+            "Bologna, Italy"
+          ],
+          "emails": ["re86@gmail.com"],
+          "phones": ["3889094888"]
+        }
+        
+      ]
+    },
+    "map": {
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82408.9689093812!2d11.249284323332098!3d44.49922892246984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd498e951c40b%3A0xa2e17c015ba49441!2sBologna%2C%20Metropolitan%20City%20of%20Bologna%2C%20Italy!5e1!3m2!1sen!2seg!4v1769256749033!5m2!1sen!2seg"
+    },
+    "form": {
+      "title": "write us a message",
+      "titleDot": ".",
+      "fields": [
+        {
+          "type": "text",
+          "placeholder": "Your Name",
+          "required": true
+        },
+        {
+          "type": "email",
+          "placeholder": "Email Address",
+          "required": true
+        },
+        {
+          "type": "tel",
+          "placeholder": "Phone Number",
+          "required": false
+        },
+        {
+          "type": "text",
+          "placeholder": "Subject",
+          "required": false
+        },
+        {
+          "type": "textarea",
+          "placeholder": "Write Message",
+          "required": true
+        }
+      ],
+      "submitText": "send message"
+    }
+  },
+  "GALLERY": {
+    "banner": {
+      "title": "Gallery",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Gallery"
+      }
+    },
+    "description": "Gallery page content will be implemented here.",
+    "images": [
+      {
+        "src": "/assets/main-image/AdobeStock_282665805-scaled.jpeg"
+      },
+      {
+        "src": "/assets/main-image/istockphoto-1141385268-612x612.jpg"
+      },
+      {
+        "src": "/assets/main-image/istockphoto-1061852176-612x612.jpg"
+      },
+      {
+        "src": "/assets/main-image/Gypsum-Board-Banner.webp"
+      },
+      {
+        "src": "/assets/main-image/vr-image.webp"
+      },
+      {
+        "src": "/assets/main-image/water-resistant-gypsum-sheet-rounded-edge-802020273-ac1jc025.avif"
+      },
+      {
+        "src": "/assets/main-image/Roof/1.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/2.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/3.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/4.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/5.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/6.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/7.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/8.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/9.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/10.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/11.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/12.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/13.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/14.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/15.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/16.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/17.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/18.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/19.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/20.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/21.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/22.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/23.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/24.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/25.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/26.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/27.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/28.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/29.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/30.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/31.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/32.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/33.webp"
+      },
+      {
+        "src": "/assets/main-image/Roof/34.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/1.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/2.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/3.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/4.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/5.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/6.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/7.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/8.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/9.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/10.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/11.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/12.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/13.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/14.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/15.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/16.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/17.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/18.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/19.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/20.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/21.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/22.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/23.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/24.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/25.webp"
+      },
+      {
+        "src": "/assets/main-image/Walls/26.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/1.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/2.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/3.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/4.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/5.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/6.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/7.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/8.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/9.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/10.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/11.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/12.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/13.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/14.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/15.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/16.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/17.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/18.webp"
+      },
+      {
+        "src": "/assets/main-image/Libraries/19.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/1.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/2.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/3.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/4.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/5.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/6.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/7.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/8.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/9.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/10.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/11.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/12.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/13.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/14.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/15.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/16.webp"
+      },
+      {
+        "src": "/assets/main-image/Open Areas/17.webp"
+      }
+    ],
+    "pagination": {
+      "pages": [1, 2, 3]
+    }
+  },
+  "VR": {
+    "banner": {
+      "title": "VR",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "VR"
+      }
+    },
+      "title": "Design Your Home Before It Exists.",
+      "description": [
+      {
+        "text": "Empty Space",
+        "details":"Start from an empty apartment at real scale and understand the space."
+      },
+      {
+        "text": "Room Layout",
+        "details":"Create rooms, add walls, and define doors in virtual reality."
+      },
+      {
+        "text": "Colors & Materials",
+        "details":"Change colors and materials instantly and see real-time results."
+      },
+      {
+        "text": "Decoration",
+        "details":"Add decorations and details to define your style."
+      },
+      {
+        "text": "Furniture",
+        "details":"Place furniture and experience your finished home before building."
+      },
+      {
+        "text": "Closing",
+        "details":"From vision to reality, before construction."
+      }
+    ],
+    "image": "../../assets/main-image/vr-image.webp",
+    "videos": [
+      {
+        "src": "/assets/main-image/vr-videos/Apartment_Color_Transformation_VR.mp4",
+        "class": "w-100 rounded-3",
+        "caption": "Apartment Color Transformation VR"
+      },
+      {
+        "src": "/assets/main-image/vr-videos/Cinematic_Apartment_Transformation_Begins.mp4",
+        "class": "w-100 rounded-3",
+        "caption": "Cinematic Apartment Transformation Begins"
+      },
+      {
+        "src": "/assets/main-image/vr-videos/Elegant_Modern_Interior_Decoration_Video.mp4",
+        "class": "w-100 rounded-3",
+        "caption": "Elegant Modern Interior Decoration Video"
+      },
+      {
+        "src": "/assets/main-image/vr-videos/Video_Appartamento_Arredato_Dalla_Visione_Alla_Realtà.mp4",
+        "class": "w-100 rounded-3",
+        "caption": "Video Appartamento Arredato Dalla Visione Alla Realtà"
+      },
+      {
+        "src": "/assets/main-image/vr-videos/Virtual_Reality_Room_Division_Animation.mp4",
+        "class": "w-100 rounded-3",
+        "caption": "Virtual Reality Room Division Animation"
+      }
+    ]
+  },
+  "SERVICES": {
+    "banner": {
+      "title": "Services",
+      "breadcrumb": {
+        "home": "Home",
+        "current": "Services"
+      }
+    },
+    "services": {
+      "items": [
+        {
+          "icon": "fa fa-paint-brush",
+          "title": "Gypsum Board Printing",
+          "description": "High-quality services on gypsum boards with precision and durability for commercial and residential projects.",
+          "link": "/services"
+        },
+        {
+          "icon": "fa fa-pencil-ruler",
+          "title": "Custom Design Solutions",
+          "description": "Creative and innovative design services tailored to your vision, from concept to final printed materials with high-quality finishes.",
+          "link": "/services"
+        },
+        {
+          "icon": "fa fa-tools",
+          "title": "Professional Installation",
+          "description": "Expert installation and finishing services ensuring perfect placement and long-lasting results with high-quality finishes.",
+          "link": "/services"
+        },
+        {
+          "icon": "fa fa-palette",
+          "title": "Finishing & Coating",
+          "description": "Premium finishing and protective coating services to enhance durability and visual appeal of your printed boards.",
+          "link": "/services"
+        }
+      ]
+    },
+    "work": {
+      "title": "WE WORK WITH INDUSTRIES",
+      "titleDot": ".",
+      "tabs": [
+        {
+          "id": "technology",
+          "label": "Gypsum Board works",
+          "image": "../../assets/main-image/AdobeStock_282665805-scaled.jpeg",
+          "description": "We specialize in installing gypsum board systems, offering custom ceilings, floating ceilings, decorative wall panels, hidden lighting systems, and acoustic and thermal solutions.",
+          "highlightedText": "works in all types of buildings.",
+          "features": [
+            "custom ceilings.",
+            "floating ceilings.",
+            "decorative wall panels.",
+            "hidden lighting systems.",
+            "acoustic and thermal solutions."
+          ]
+        },
+        {
+          "id": "support",
+          "label": "interior & exterior painting",
+          "image": "../../assets/main-image/istockphoto-1141385268-612x612.jpg",
+          "description": "We offer comprehensive interior and exterior painting services, ensuring high-quality finishing, smooth surfaces, color selection, durable and clean application, and protection against weather and UV rays.",
+          "highlightedText": "different types of buildings.",
+          "features": [
+            "high-quality finishing.",
+            "smooth surfaces.",
+            "color selection.",
+            "durable and clean application.",
+            "protection against weather and UV rays."
+          ]
+        },
+        {
+          "id": "install",
+          "label": "white putty & plastering",
+          "image": "../../assets/main-image/istockphoto-1061852176-612x612.jpg",
+          "description": "We provide professional white putty and plastering services, offering ultra-smooth finishing, perfect base for premium painting, superior adhesion to various surfaces, easy application and clean removal, environmentally friendly and low VOC, and long-lasting and durable protection.",
+          "highlightedText": "features and benefits of white putty & plastering.",
+          "features": [
+            "ultra-smooth finishing.",
+            "perfect base for premium painting.",
+            "superior adhesion to various surfaces.",
+            "easy application and clean removal.",
+            "environmentally friendly and low VOC.",
+            "long-lasting and durable protection."
+          ]
+        },
+        {
+          "id": "work",
+          "label": "where we work",
+          "image": "../../assets/main-image/istockphoto-1141385268-612x612.jpg",
+          "description": "We are a leading gypsum board installation company, specializing in custom ceilings, floating ceilings, decorative wall panels, hidden lighting systems, and acoustic and thermal solutions.",
+          "highlightedText": "they're done by a team of people working together.",
+          "features": [
+            "residential buildings.",
+            "commercial campanies.",
+            "hospitals & medical centers.",
+            "educational institutions.",
+            "retail & shopping malls.",
+            "offices & business centers.",
+            "restaurants & cafes.",
+            "hotels & resorts."
+          ]
+        }
+      ]
+    }
+  }
+}

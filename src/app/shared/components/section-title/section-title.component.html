@@ -1,0 +1,11 @@
+<div class="title textMainColor mb-5">
+  <h2
+    class="text-uppercase h1"
+    [class.text-center]="centered"
+    [class.mb-4]="!centered"
+  >
+    {{ title }}
+    <span class="textMainColor h2 fw-bold ms-1">{{ titleDot }}</span>
+  </h2>
+  <p *ngIf="description" class="text-secondary">{{ description }}</p>
+</div>

@@ -1,0 +1,35 @@
+// App Component Styles
+
+
+.loader {
+    position: relative;
+}
+
+.loader:after {
+    content: '';
+    background: var(--mainColor);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 14px;
+    transform-origin: 50px 50px;
+    animation: rotate 1s linear infinite;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+
+@keyframes rotate {
+
+    0%,
+    100% {
+        transform: rotate(-45deg) translate(-50%, -50%)
+    }
+
+    50% {
+        transform: rotate(-245deg) translate(-50%, -50%)
+    }
+}

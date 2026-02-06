@@ -1,0 +1,15 @@
+<div class="row g-3">
+  <div class="col-lg-3 col-md-6" *ngFor="let service of services">
+    <div class="soluationCard p-3 rounded-3 shadow position-relative">
+      <div class="soluationText d-flex justify-content-between my-3">
+        <span class="text-secondary fs-3">{{ service.number }}</span>
+        <i [class]="service.icon + ' fs-1 textMainColor'"></i>
+      </div>
+      <a [routerLink]="service.link || '#'">
+        <!-- [innerHTML]="service.title | nl2br" -->
+        <h2 class="h5 text-capitalize text-white">{{ service.title }}</h2>
+      </a>
+      <span class="position-absolute serLink bottom-0 end-0"></span>
+    </div>
+  </div>
+</div>
