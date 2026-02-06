@@ -639,8 +639,8 @@
       },
       "email": {
         "icon": "fa fa-envelope-circle-check",
-        "text": ["re86@gmail.com"],
-        "link": "mailto:re86@gmail.com"
+        "text": ["Costruzioni.re86@gmail.com"],
+        "link": "mailto:Costruzioni.re86@gmail.com"
       }
     },
     "newsletter": {
@@ -715,7 +715,7 @@
           "addresses": [
             "Bologna, Italy"
           ],
-          "emails": ["re86@gmail.com"],
+          "emails": ["Costruzioni.re86@gmail.com"],
           "phones": ["3889094888"]
         }
         
