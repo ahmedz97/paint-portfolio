@@ -24,8 +24,8 @@ export class AppComponent implements OnInit, OnDestroy {
   private routerSubscription?: Subscription;
 
   ngOnInit(): void {
-    // Set default language
-    this.translate.setDefaultLang('en');
+    // Set default language to italian
+    this.translate.setDefaultLang('it');
     
     // Show spinner initially - first page will take over
     this.spinner.show();
@@ -47,7 +47,7 @@ export class AppComponent implements OnInit, OnDestroy {
     // Set language from localStorage, browser, or default
     if (isPlatformBrowser(this.platformId)) {
       const STORAGE_KEY = 'selectedLanguage';
-      const supportedLangs = ['en', 'it'];
+      const supportedLangs = ['it', 'en'];
       
       // Try to load from localStorage first
       const savedLang = localStorage.getItem(STORAGE_KEY);
@@ -56,7 +56,7 @@ export class AppComponent implements OnInit, OnDestroy {
       } else {
         // Fallback to browser language
         const browserLang = navigator.language.split('-')[0];
-        const lang = supportedLangs.includes(browserLang) ? browserLang : 'en';
+        const lang = supportedLangs.includes(browserLang) ? browserLang : 'it';
         this.translate.use(lang);
         // Save to localStorage
         localStorage.setItem(STORAGE_KEY, lang);

@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   private translate = inject(TranslateService);
   private langSubscription?: Subscription;
-  currentLang: string = 'en';
+  currentLang: string = 'it';
 
   ngOnInit(): void {
     // Set current language from localStorage or translate service
@@ -28,10 +28,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
       if (savedLang) {
         this.currentLang = savedLang;
       } else {
-        this.currentLang = this.translate.currentLang || this.translate.defaultLang || 'en';
+        this.currentLang = this.translate.currentLang || this.translate.defaultLang || 'it';
       }
     } else {
-      this.currentLang = this.translate.currentLang || this.translate.defaultLang || 'en';
+      this.currentLang = this.translate.currentLang || this.translate.defaultLang || 'it';
     }
     
     // Subscribe to language changes to update the select

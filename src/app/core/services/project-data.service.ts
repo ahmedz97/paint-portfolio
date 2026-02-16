@@ -18,7 +18,7 @@ export class ProjectDataService {
 
   // Get current language as observable, reactive to language changes
   private getCurrentLang$(): Observable<string> {
-    const initialLang = this.translate.currentLang || this.translate.defaultLang || 'en';
+    const initialLang = this.translate.currentLang || this.translate.defaultLang || 'it';
     return this.translate.onLangChange.pipe(
       startWith({ lang: initialLang } as any),
       map(event => {
@@ -102,7 +102,7 @@ export class ProjectDataService {
 
   // Method to reload data when language changes
   reloadData(): void {
-    const currentLang = this.translate.currentLang || this.translate.defaultLang || 'en';
+    const currentLang = this.translate.currentLang || this.translate.defaultLang || 'it';
     this.dataCache.delete(currentLang);
   }
 }

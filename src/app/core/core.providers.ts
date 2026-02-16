@@ -29,7 +29,7 @@ export const coreProviders = [
   provideAnimations(),
   importProvidersFrom(
     TranslateModule.forRoot({
-      defaultLanguage: "en",
+      defaultLanguage: "it",
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
