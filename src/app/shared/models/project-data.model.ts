@@ -12,6 +12,7 @@ export interface Site {
   name: string;
   title: string;
   logo: string;
+  phone: string;
   footerLogo: string;
   copyright: string;
   copyrightLink: string;

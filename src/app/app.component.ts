@@ -44,22 +44,18 @@ export class AppComponent implements OnInit, OnDestroy {
       }
     });
 
-    // Set language from localStorage, browser, or default
+    // Set language from localStorage or default (Italian)
     if (isPlatformBrowser(this.platformId)) {
       const STORAGE_KEY = 'selectedLanguage';
       const supportedLangs = ['it', 'en'];
-      
-      // Try to load from localStorage first
+      const defaultLang = 'it';
+      localStorage.setItem(STORAGE_KEY, defaultLang);
       const savedLang = localStorage.getItem(STORAGE_KEY);
       if (savedLang && supportedLangs.includes(savedLang)) {
         this.translate.use(savedLang);
       } else {
-        // Fallback to browser language
-        const browserLang = navigator.language.split('-')[0];
-        const lang = supportedLangs.includes(browserLang) ? browserLang : 'it';
-        this.translate.use(lang);
-        // Save to localStorage
-        localStorage.setItem(STORAGE_KEY, lang);
+        this.translate.use(defaultLang);
+        
       }
     }
 

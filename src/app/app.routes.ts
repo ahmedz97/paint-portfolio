@@ -7,7 +7,7 @@ export const routes: Routes = [
       import("./layouts/main-layout/main-layout.component").then(
         (m) => m.MainLayoutComponent
       ),
-    title: "Home Page",
+    title: "Home",
     children: [
       {
         path: "",
@@ -15,7 +15,7 @@ export const routes: Routes = [
           import("./features/pages/home/home-page.component").then(
             (m) => m.HomePageComponent
           ),
-        title: "Home Page",
+        title: "Home",
       },
       {
         path: "about",

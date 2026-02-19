@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   private translate = inject(TranslateService);
   private langSubscription?: Subscription;
-  currentLang: string = 'it';
+  currentLang: string = 'it'; 
 
   ngOnInit(): void {
     // Set current language from localStorage or translate service
@@ -38,6 +38,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.langSubscription = this.translate.onLangChange.subscribe((event) => {
       this.currentLang = event.lang;
     });
+  }
+
+  getWhatsappUrl(phone: string): string {
+    phone = this.siteData?.phone || '';
+    return "https://wa.me/" + phone.replace(/\s/g, "");
   }
 
   ngOnDestroy(): void {
