@@ -3,7 +3,7 @@ import {
   provideHttpClient,
   withInterceptorsFromDi,
 } from "@angular/common/http";
-import { provideRouter, withInMemoryScrolling } from "@angular/router";
+import { provideRouter, withHashLocation, withInMemoryScrolling } from "@angular/router";
 import { provideClientHydration } from "@angular/platform-browser";
 import { provideAnimations } from "@angular/platform-browser/animations";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
@@ -19,6 +19,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 export const coreProviders = [
   provideRouter(
     routes,
+    withHashLocation(),
     withInMemoryScrolling({
       scrollPositionRestoration: "top",
       anchorScrolling: "enabled",
